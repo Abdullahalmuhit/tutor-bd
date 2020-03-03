@@ -1,0 +1,8 @@
+RewriteEngine on
+# RewriteBase /assets/upload
+# RewriteRule ^assets/upload/(.*) mnt/volume_sgp1_02/upload/$1
+# RewriteRule "^/assets/upload" "/mnt/volume_sgp1_02/upload"
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
