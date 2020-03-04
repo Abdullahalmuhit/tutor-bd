@@ -59,7 +59,7 @@
 
 							    <div class="col-xs-12 col-sm-12 col-md-12 input_margin_mobile">
 								    <div class="form-group">
-											    	<button type="submit" id="tutor_registration_continue" class="btn btn-caretutors">Continue</button>
+											    	<button type="submit" id="tutor_registration_continue" class="submit_btn signup-submitbtn">Submit</button>
 					                <p style="margin-top: 7px!important; text-align: center;">By Signing up, you agree to our <a target="_blank" href="<?php echo base_url('landing/terms_and_conditions'); ?>">Terms of Use and Privacy Policy</a></p>
 					                </div>
 		        				</div>

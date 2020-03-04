@@ -16,10 +16,11 @@
                 <div class="col-md-6">
                     <div class="block login-content">
                         <h2 class="login-header-text">Existing Member Sign In</h2>
-                        <form method="post" id="frmsignin" data-link="user/login" role="form" >
+                     
+                        <form class="form-horizontal" id="frmsignin" action="user/login"  method="post" role="form">
                             <div class="logininner_block">
                                 <div class="input_holder login-input">
-                                    <input type="email" name="email" id="email" value="" placeholder="Enter Email">
+                                    <input type="email" name="email" id="email" placeholder="Enter Email">
                                 </div>
                                 <div class="input_holder login-input">
                                     <input type="password" name="password" placeholder="Enter Password">
@@ -36,7 +37,7 @@
 
                                 </ul>
                                 <div class="input_holder signin-btn">
-                                    <input type="submit" name="" value="Sign In">
+                                    <input type="submit"  value="Sign In">
                                 </div> 
                                 <div class="input_holder">
                                 <p style="margin-top: 7px!important;"><a target="_blank" href="<?php echo base_url('user/forgot_password'); ?>">Forgot password?</a></p>
