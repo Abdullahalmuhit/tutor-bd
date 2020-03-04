@@ -8,7 +8,6 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-
     <!-- SCROLL TOP BUTTON -->
     <!--<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
     <!-- END SCROLL TOP BUTTON -->
@@ -62,6 +61,265 @@
     </header>
 
     <!--Header area End-->
+     
+		<div class="modal fade" id="hireTutorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog ezCustTrans" style="margin-top: 50px !important;">
+		    	<div class="modal-content">
+		    		<div class="modal-header">
+				    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h3 class="modal-title" id="myModalLabel">Fill up your tutor requirements for free</h3>
+				        <p class="text-center" style="margin-bottom: 45px !important; color: #1f2c44;">Fill up your tutor requirements within minutes. Over 10000+ Parents/Students have already found qualified tutors  through our platform.</p>
+
+				    </div>
+				    <form class="parent_registration_form" id="parent_registration_form" data-link="registration/parents_registration_frontend" method="post" role="form">
+					<input type="hidden" value="1" name="step" id="step" />
+					<input type="hidden" value="guardian" name="user_type" id="user_type" />
+				    	<div class="modal-body">
+				    		<div id="parent_registration_form_first_part">
+				    			<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="selcity">Select City</label>
+								    		<div class="select_label">
+									    		<select class="form-control selcity" name="selcity" id="selcity" required="required">
+												  	<?php
+													foreach ($city as $cit)
+													{
+													?>
+														<option value="<?php echo ($cit->city == 'Select City')?'':$cit->id; ?>"><?php echo $cit->city; ?></option>
+													<?php
+													}
+													?>
+												</select>
+											</div>
+								    	</div>
+								  	</div>
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="sellocation">Select Location</label>
+								    		<div class="select_label">
+										    	<select class="form-control sellocation" name="sellocation" id="sellocation" required="required" >
+													<option>Select Location</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="selcat">Select Category</label>
+								    		<div class="select_label">
+										    	<select class="form-control selcat" name="selcat" id="selcat" required="required">
+													<?php
+													foreach ($category as $cat)
+													{
+													?>
+														<option value="<?php echo ($cat->category == 'Select Category')?'':$cat->id; ?>"><?php echo $cat->category;?></option>
+													<?php
+													}
+													?>
+												</select>
+											</div>
+										</div>
+								  	</div>
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="selsubcat">Select Class/Course</label>
+								    		<div class="select_label">
+										    	<select class="form-control selsubcat" name="selsubcat" id="selsubcat" required="required">
+													<option>Select Class/Course</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="selstugender">Select Student Gender</label>
+								    		<div class="select_label">
+										    	<select class="form-control selstugender" name="selstgender" id="selstugender" required="required">
+													<option value="">Select Student Gender</option>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="institute_name">Institute Name</label>
+								    		<input type="text" required="required" class="form-control" name="institute_name" id="institute_name" placeholder="Institute Name">
+								    	</div>
+								  	</div>
+
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="full_name">Name</label>
+								    		<input type="text" required="required" class="form-control" name="full_name" id="full_name" placeholder="Name">
+								    	</div>
+								  	</div>
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+								    		<label for="mobile_no">Phone Number</label>
+								    		<input type="text" required="required" class="form-control" name="mobile_no" id="mobile_no" placeholder="Eg. 0164...">
+								    	</div>
+								  	</div>
+							  	</div>
+						  	</div>
+						  	<div id="parent_registration_form_second_part" style="display: none;">
+						  		<div class="row" >
+						  			<fieldset id="subject_show" class="input_margin_bottom">
+
+						  			</fieldset>
+
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<div class="form-group">
+											<label for="selgender">Tutor gender reference</label>
+											<div class="select_label">
+										    	<select class="form-control selgender" id="selgender" name="selgender">
+													<option value="">Tutor gender reference</option>
+													<option value="Any">Any</option>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+									  	<div class="form-group">
+											<label for="days_in_week">Days in a week</label>
+											<div class="select_label">
+										    	<select class="form-control days_in_week" id="days_in_week" name="selday">
+													<option value="">Days in a week</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<div class="form-group">
+											<label for="salary_range">Salary</label>
+								    		<input type="number" class="form-control" id="salary_range" name="salary" placeholder="Salary">
+								    	</div>
+								  	</div>
+								  	<div class="col-xs-12 col-sm-12 col-md-6">
+								  		<div class="form-group">
+									  		<label for="date_to_hire">When Are You Looking To Hire</label>
+									    	<div class="date" id="datePicker">
+									            <div class="input-group input-append date">
+									                <input type="text" class="form-control" id="date_to_hire" readonly="readonly" name="date_to_hire" placeholder="When are you looking to hire" />
+									                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+									            </div>
+									        </div>
+								        </div>
+								  	</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-6" id="skype_id_div" style="display: none;">
+										<div class="form-group">
+									  		<label for="skype_id">Skype Id</label>
+											<input type="text" class="form-control" id="skype_id" name="skype_id" placeholder="Please provide your Skype ID/Google Hangout ID">
+										</div>
+	  								</div>
+
+	  								<div class="col-xs-12 col-sm-12 col-md-6">
+								    	<div class="form-group">
+									  		<label for="detail_address">Address</label>
+								    		<input type="text" class="form-control" id="detail_address" name="address" placeholder="Detail address">
+								    	</div>
+								    </div>
+
+								    <div class="col-xs-12 col-sm-12 col-md-6">
+								     	<div class="form-group">
+									  		<label for="no_of_student">No. of student</label>
+									  		<div class="select_label">
+										    	<select class="form-control no_of_student" id="no_of_student" name="no_of_student">
+													<option value="1">No of student</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+								    <div class="col-xs-12 col-sm-12 col-md-12">
+								    	<div class="form-group">
+									  		<label for="more_about_requirements">Requirements</label>
+								    		<textarea class="form-control" id="more_about_requirements" name="otherreq" rows="5" placeholder="Please tell us a bit more about your  requirement to help us match better"></textarea>
+								    	</div>
+								    </div>
+
+								    <div class="col-xs-12 col-sm-12 col-md-6">
+									    <div class="form-group">
+										  	<label for="selhear">How Did You Hear About Us?</label>
+										  	<div class="select_label">
+										    	<select class="form-control selhear" id="selhear" name="selhear">
+													<option value="0">How did you hear about us?</option>
+													<option value="1">From Friends & Family</option>
+													<option value="2">From Facebook</option>
+													<option value="3">From Google</option>
+													<option value="4">From Shop</option>
+													<option value="5">Others</option>
+												</select>
+											</div>
+										</div>
+								  	</div>
+
+									<div class="col-xs-12 col-sm-12 col-md-6 ">
+								    	<div class="form-group">
+									  		<label for="email">Email Address</label>
+								    		<input type="email" class="form-control" required="required" id="email" name="email" placeholder="Write your email ID" />
+								    	</div>
+								    </div>
+
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<div class="form-group">
+									  		<label for="password">Password</label>
+								    		<input type="password" class="form-control" required="required" id="password" name="password" placeholder="Enter your password" />
+								    	</div>
+								    </div>
+
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<div class="form-group">
+									  		<label for="confirm_password">Retype Password</label>
+								    		<input type="password" class="form-control" required="required" id="confirm_password" placeholder="Enter your password again" />
+								    	</div>
+								    </div>
+						  		</div>
+						  	</div>
+				    	</div>
+					    <div class="modal-footer">
+						    <div class="row">
+		                    	<div class="col-xs-12 col-sm-12 col-md-5">
+							    	<button type="button" class="btn btn-back" id="back_to_first_form" style="display: none;">Back</button>
+			        			</div>
+			        			<div class="col-xs-12 col-sm-12 col-md-12">
+			        				<button type="submit" name="submit_first" class="btn btn-caretutors parent_registration_form_first_part_submit" id="submit_first">Continue</button>
+			        			</div>
+			        			<div class="col-xs-12 col-sm-12 col-md-12">
+			        				<p style="margin-top: 7px!important; text-align: center;">By Signing up, you agree to our <a target="_blank" href="<?php echo base_url('landing/terms_and_conditions'); ?>">Terms of Use and Privacy Policy</a></p>
+		        				</div>
+	        				</div>
+	      				</div>
+      				</form>
+		    	</div>
+		  	</div>
+		</div>
       <!-- END MENU -->
       
        <!----Header sidenav Area Start----->
@@ -307,7 +565,7 @@
     
      <!----student/parents Testimonial Area Start----->
     <div id="pagewrap">
-        <section class="clientsay " style="background: #000;background-image:url(images/testimonial-bg.jpg); background-repeat:no-repeat; background-position: center top; background-size:cover; background-attachment:fixed;">
+        <section class="clientsay " style="background-image:url('assets/landing/img/testimonial-bg.jpg'); background-repeat:no-repeat; background-position: center top; background-size:cover; background-attachment:fixed;">
             <div class="container">
                 <div class="wow fadeInUpBig" data-wow-duration="1s">
 
@@ -319,70 +577,30 @@
                     <div class="testimonial-right">
                         <div id="clienttestiminials">
                             <div class="owl-carousel">
+                                    <?php  foreach($testimonials as $testimonial){
+              				 if($testimonial['commentator_flag'] == 'tutor'){
+
+              				 ?>
                                 <div class="item">
                                     <div class="item-slide">
                                         <div class="tmthumb">
-                                            <img src="images/client1.jpg">
+                                            <img src="<?php echo base_url('assets/upload/testimonial_user_image/60x60/'.$testimonial['commentator_image']); ?>" alt="img">
                                         </div>
                                         <div class="tmdesc">
                                             <div class="tmtitle">
-                                                <h3><a href="http://live-demo.online/tutor/testimonials/jonathan-doe/">Jonathan Doe</a></h3>
-                                                <span>Uttora-Dhaka</span>
+                                                <h3><a href="#"><?php echo $testimonial['name'];?></a></h3>
+                                                <span><?php echo $testimonial['designation'];?></span>
                                             </div>
-                                            <p>Praesent ornare, mi in porta iaculis, lectus mi ultrices est, eget commodo dolor neque vel massa. Donec sed tortor sodales, tincidunt leo eu, tristique ante. Donec enim arcu, porta eget sagittis non, imperdiet ac enim. Proin egestas odio sit amet leo aliquam rhoncus.</p>
+                                            <p>"<?php echo $testimonial['comment'];?></p>
 
                                         </div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="item-slide">
-                                        <div class="tmthumb">
-                                            <img src="images/client2.jpg">
-                                        </div>
-                                        <div class="tmdesc">
-                                            <div class="tmtitle">
-                                                <h3><a href="http://live-demo.online/tutor/testimonials/martina-doe/">Martina Doe</a></h3>
-                                                <span>Mohammadpur-Dhaka</span>
-                                            </div>
-                                            <p>Donec sed tortor sodales, tincidunt leo eu, tristique ante. Donec enim arcu, porta eget sagittis non, imperdiet ac enim. Proin egestas odio sit amet leo aliquam rhoncus. Praesent ornare, mi in porta iaculis, lectus mi ultrices est, eget commodo dolor neque vel massa.</p>
-
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item-slide">
-                                        <div class="tmthumb">
-                                            <img src="images/client3.jpg">
-                                        </div>
-                                        <div class="tmdesc">
-                                            <div class="tmtitle">
-                                                <h3><a href="http://live-demo.online/tutor/testimonials/brandon-shaw/">Brandon Shaw</a></h3>
-                                                <span>Dhanmondi-Dhaka</span>
-                                            </div>
-                                            <p>Donec enim arcu, porta eget sagittis non, imperdiet ac enim. Proin egestas odio sit amet leo aliquam rhoncus. Praesent ornare, mi in porta iaculis, lectus mi ultrices est, eget commodo dolor neque vel massa. Donec sed tortor sodales, tincidunt leo eu, tristique ante.</p>
-
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item-slide">
-                                        <div class="tmthumb">
-                                            <img src="images/client4.jpg">
-                                        </div>
-                                        <div class="tmdesc">
-                                            <div class="tmtitle">
-                                                <h3><a href="http://live-demo.online/tutor/testimonials/sarah-brown/">Sarah Brown</a></h3>
-                                                <span>Marketing Class</span>
-                                            </div>
-                                            <p>Neque nisl rhoncus augue. Scelerisque tincidunt purus dui ut magna. Praesent ornare, mi in porta iaculis, lectus mi ultrices est, eget commodo dolor neque vel massa. Donec sed tortor sodales, tincidunt leo eu, tristique ante. Donec enim arcu, porta eget sagittis non.</p>
-
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
+                              
+                               <?php } } ?>
+                             
+                           
                             </div>
                         </div>
                     </div>
@@ -396,10 +614,393 @@
     <!----student/parents Testimonial Area End----->
      
 
-	   
+	     <!----Popular Category Area Start----->
+
+    <section class="popular-category-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="popular-category-header text-center section-title">
+                        <h4>Popular Categories</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_1.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-language"></i>
+                            <h5>Bangla & English Medium</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-language"></i></span>
+                            <h4><a href="#">Bangla & English Medium</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_2.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-book-reader"></i>
+                            <h5>Language Learning</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-book-reader"></i></span>
+                            <h4><a href="#">Language Learning</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_3.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="far fa-window-restore"></i>
+                            <h5>Professional Skill Development</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="far fa-window-restore"></i></span>
+                            <h4><a href="#">Professional Skill Development</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_4.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-window-restore"></i>
+                            <h5>Special Skill Development</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-window-restore"></i></span>
+                            <h4><a href="#">Special Skill Development</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_5.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-school"></i>
+                            <h5>Religious Studies</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-school"></i></span>
+                            <h4><a href="#">Religious Studies</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_6.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-stamp"></i>
+                            <h5>Arts</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-stamp"></i></span>
+                            <h4><a href="#">Arts</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_7.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-business-time"></i>
+                            <h5>Test Preparation</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-business-time"></i></span>
+                            <h4><a href="#">Test Preparation</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 home-subject-mob">
+                    <div class="subject-bg-wrap home-subject-1 default-width"><a href="#"><img class="img-fluid" src="<?php echo base_url('assets/landing/img/category/category_8.jpg'); ?>" alt="Bangla-English-Medium"> </a>
+                        <div class="subject-bg-tag home-subject-1">Subject</div>
+                        <div class="subject-bg-course"><i class="fas fa-user-graduate"></i>
+                            <h5>Admission Test</h5>
+                        </div>
+                        <div class="subject-bg-hover"><span><i class="fas fa-user-graduate"></i></span>
+                            <h4><a href="#">Admission Test</a></h4>
+                            <div class="subject-bg-view-more"><a href="<?php echo base_url('landing/hire_a_tutor'); ?>">Hire a tutor</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Popular Category Area End----->
      
+   <!----How It Works Area Start----->
 
+    <section class="How-it-works-area">
+        <div class="container">
+            <div class="how-works-content-area">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="how-it-works-header text-center section-title">
+                            <div class="box__top-icon">
+                                <span class="icon-wrap"> <i class="far fa-compass"></i></span>
+                            </div>
+                            <h4>How it Works for tutors ?</h4>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="how-work-warp">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="how-works-body-content text-center">
+                                <div class="review__item">
+                                    <div class="thumbnail review-card">
+                                        <span class="review-card__object">
+                                            <img src="<?php echo base_url('assets/landing/img/category/create-account.png'); ?>" class="img-fluid" alt="TUTOR Post">
+                                        </span>
+                                        <div class="caption review-card__caption">
+                                            <h3 class="review-card__caption_title">1. Create a Free Account</h3>
+                                            <p class="review-card__caption_text">
+                                                Post your Tutor requirements. Our experts will analyze it and live your requirements to our job board.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="how-works-body-content text-center">
+                                <div class="review__item">
+                                    <div class="thumbnail review-card">
+                                        <span class="review-card__object">
+                                            <img src="<?php echo base_url('assets/landing/img/category/alerm.png'); ?>" class="img-fluid" alt="TUTOR Post">
+                                        </span>
+                                        <div class="caption review-card__caption">
+                                            <h3 class="review-card__caption_title">2. Get Free Tutoring Job Alerts</h3>
+                                            <p class="review-card__caption_text">
+                                                You'll receive the 5 (max) best Tutors' CVs in your account within 48 hours which closely match to your requirements
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="how-works-body-content text-center">
+                                <div class="review__item">
+                                    <div class="thumbnail review-card last-review-card">
+                                        <span class="review-card__object">
+                                            <img src="<?php echo base_url('assets/landing/img/category/applyt.png'); ?>" class="img-fluid" alt="TUTOR Post">
+                                        </span>
+                                        <div class="caption review-card__caption">
+                                            <h3 class="review-card__caption_title">3. Apply to Your Desired Job</h3>
+                                            <p class="review-card__caption_text">
+                                                Choose the best one among the 5 CV's. Offer the selected Tutor for few trial classes before taking the regular classes. Give us your feedback and start Learning.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----How It Works Area End----->
+
+ <!--Gallery Area Start-->
+
+    <section class="gallery-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="gallery-header text-center">
+                        <h4>Tution Terminal Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/810/?random" alt="img17" />
+                            <figcaption>
+                                <h2>Teachers <span>Party</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/810/?random"><i class="fas fa-plus"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/800/?random" alt="img25" />
+                            <figcaption>
+                                <h2>Student <span>Party</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/800/?random"><i class="fas fa-plus"></i></a>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/801/?random" alt="img25" />
+                            <figcaption>
+                                <h2>Work<span> Space</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/801/?random">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/802/?random" alt="img25" />
+                            <figcaption>
+                                <h2>Happy <span>Employee</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/802/?random">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/803/?random" alt="img17" />
+                            <figcaption>
+                                <h2>Cloths <span>Donetion</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/803/?random">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="effect-ravi">
+                            <img src="https://picsum.photos/1000/804/?random" alt="img25" />
+                            <figcaption>
+                                <h2>Best <span>Teacher</span></h2>
+                                <p>
+                                    <a data-fancybox="gallery" href="https://picsum.photos/1000/804/?random">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Gallery Area End-->
+    
+     <!----Teacher Testimonial Area Start----->
+
+    <div id="pagewrap">
+        <section class="clientsay " style="background-image:url('assets/landing/img/testimonial-bg.jpg'); background-repeat:no-repeat; background-position: center top; background-size:cover; background-attachment:fixed;">
+            <div class="container">
+                <div class="wow fadeInUpBig" data-wow-duration="1s">
+
+                    <div class="testimonial-left section-title">
+                        <h1>Student / Parents Say?</h1>
+                        <p>Praesent ornare, mi in porta iaculis, lectus mi ultrices commdolor neque vel massa. Donec sede tortor sodales, tincidunt lPr ornare, mi in porta iaculis, lectus mi ultrices est.</p>
+
+                    </div>
+                    <div class="testimonial-right">
+                        <div id="clienttestiminials">
+                            <div class="owl-carousel">
+                               <?php  foreach($testimonials as $testimonial){
+              				 if($testimonial['commentator_flag'] == 'parent'){
+
+              				 ?>
+                                <div class="item">
+                                    <div class="item-slide">
+                                        <div class="tmthumb">
+                                            <img src="<?php echo base_url('assets/upload/testimonial_user_image/60x60/'.$testimonial['commentator_image']); ?>">
+                                        </div>
+                                        <div class="tmdesc">
+                                            <div class="tmtitle">
+                                                <h3><a href="#"><?php echo $testimonial['name'];?></a></h3>
+                                                <span><?php echo $testimonial['designation'];?></span>
+                                            </div>
+                                            <p>"<?php echo $testimonial['comment'];?>"</p>
+
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                             <?php } } ?>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div><!-- .end section class -->
+                <div class="clear"></div>
+            </div><!-- container -->
+        </section>
+    </div>
+
+    <!----Teacher Testimonial Area End----->
+    
+      <!----Counter Area Start----->
+
+    <section class="counter-area-strat">
+        <div class="container">
+            <div class="counter-content">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="counter-head">
+                            <div class="counter-img">
+                                <img src="assets/landing/img/counter.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="counter-text">
+                                <h3> Quick &amp;<br><span><b> Convenient</b></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row mt">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="counters">
+                                    <h3 style="cursor: pointer"><span class="counter"><b>
+                                                <?php echo $stat->total_applied ?></b></span><br> Total Applied </h3>
+                                    <img src="assets/landing/img/arrow.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="counters">
+                                    <h3><span class="counter"><b> <?php echo $stat->total_live_jobs ?></b></span><br> Live Tution Jobs</h3>
+                                    <img src="assets/landing/img/arrow.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="counters">
+                                    <h3><span class="counter"><b><?php echo round($stat->total_rating, 1) ?></b></span><span>/5</span><br> Avarage rating </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-xs-block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Counter Area End----->
  
 
 	<?php echo $footer; ?>

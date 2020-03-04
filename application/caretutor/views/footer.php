@@ -66,17 +66,17 @@
                             <h2 class="service_title">Useful Links</h2>
                             <p>
 
-                                <a href="" style="cursor: pointer;"> <i class="fas fa-angle-right"></i>Become A Tutor</a>
+                                <a href="<?php echo base_url('landing/become_a_tutor')?>" style="cursor: pointer;"> <i class="fas fa-angle-right"></i>Become A Tutor</a>
                                 <br>
-                                <a href="#"> <i class="fas fa-angle-right"></i> Hire A Tutor</a>
+                                <a href="<?php echo base_url('landing/hire_a_tutor'); ?>"> <i class="fas fa-angle-right"></i> Hire A Tutor</a>
                                 <br>
-                                <a href="#"> <i class="fas fa-angle-right"></i> Our Blog</a>
+                                <a href="https://caretutors.com/blog"> <i class="fas fa-angle-right"></i> Our Blog</a>
                                 <br>
-                                <a href="contactus.html"> <i class="fas fa-angle-right"></i> Contact</a>
+                                <a href="<?php echo base_url('landing/contact'); ?>"> <i class="fas fa-angle-right"></i> Contact</a>
                                 <br>
-                                <a href="career.html"> <i class="fas fa-angle-right"></i> Careers</a>
+                                <a href="#"> <i class="fas fa-angle-right"></i> Careers</a>
                                 <br>
-                                <a href="faq.html"> <i class="fas fa-angle-right"></i> FAQ</a>
+                                <a href="<?php echo base_url('landing/faq'); ?>"> <i class="fas fa-angle-right"></i> FAQ</a>
                             </p>
                         </div>
                     </div>
@@ -239,18 +239,20 @@
 
 <!-- initialize jQuery Library -->
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+
+
 <!--ref for help video-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <!--ref for help video-->
 
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmm9-boRblkDLrsyszTIS0sIy7dQZNI7U&callback=initMap"></script> -->
-<!-- <script src="<?php echo base_url(); ?>assets/landing/js/jquery.ui.map.js"></script> -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmm9-boRblkDLrsyszTIS0sIy7dQZNI7U&callback=initMap"></script> 
+<script src="<?php echo base_url(); ?>assets/landing/js/jquery.ui.map.js"></script> 
 
 <script src="<?php echo base_url(); ?>assets/landing/js/wow.min.js"></script>
 
 
-<!-- <script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script> -->
+<script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script> 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
 
 <script src="<?php echo base_url(); ?>assets/landing/js/jquery.superslides.min.js" type="text/javascript"></script>

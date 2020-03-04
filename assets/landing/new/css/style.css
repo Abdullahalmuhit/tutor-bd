@@ -997,7 +997,7 @@ article ul li {
 .popular-category-header {
     padding: 15px 0 40px;
     margin-bottom: 40px !important;
-    background: url(../images/icon-heading.png) no-repeat bottom transparent;
+    background: url(../../img/icon-heading.png) no-repeat bottom transparent;
     position: relative;
     overflow: hidden;
 }
@@ -1102,6 +1102,9 @@ subject-bg-wrap {
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out;
 }
+.subject-bg-hover i{
+    padding-top: 10px;
+}
 
 .subject-bg-hover h4 a {
     text-decoration: none;
@@ -1175,7 +1178,7 @@ subject-bg-wrap {
 .gallery-header{
         padding: 15px 0 40px;
     margin-bottom: 40px !important;
-    background: url(../images/icon-heading.png) no-repeat bottom transparent;
+    background: url(../../img/icon-heading.png) no-repeat bottom transparent;
     position: relative;
     overflow: hidden;
 }
@@ -1627,6 +1630,7 @@ figure.effect-ravi:hover p i:empty {
 
 .footer-contact-icon i {
     color: #fff;
+    padding-top: 7px;
 }
 
 .footer-contact-icon .fa:hover {

@@ -16,6 +16,7 @@
 		overflow: auto !important;
 	}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <body>
     <!-- SCROLL TOP BUTTON -->
     <!--<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>-->
@@ -28,257 +29,1153 @@
 
     <!--=========== BEGAIN BLOG SECTION ================-->
     <section id="blog">
-      	<div class="container container_body" style="padding-top: 70px;">
-      		<div class="row">
-          		<div class="col-lg-4 col-md-4 col-sm-12" id="filter_div">
-            		<!-- Start blog sidebar -->
-              		<!-- Start single sidebar -->
-              		<div class="panel panel-primary">
-						<div class="panel-body">
-							<div class="row">
-								<h1 class="panel-heading">JOB SEARCH</h1>
-								<div class="col-xs-12 col-sm-12 col-md-12">
-									<div class="form-group" style="padding-left: 0px;padding-right: 0px;">
-										<label class="job_board_label">City</label>
-										<div class="select_label">
-					                		<select class="form-control" id="city"> <!-- class="postform" -->
-					                			<option value="">Select One</option>
-							                  	<?php
+ 
+    <div class="job-board-main-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="job-board-header">
+                        <h4>Tutor jobs in Dhaka City</h4>
+                        <div class="breadcumb">
+                            <span><a href="index.html">Home</a></span> <span class="arrow">></span> <span class="bread-active"><a href="job-board.html">Jobs board</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="job-board-body-content">
+                        <div class="d-flex justify-content-between job-board-body-header  mb-3">
+                            <div class="p-2 job-p">
+                                1 - 25 of 1911 jobs
+                            </div>
+                            <div class="p-2 job-p">
+                                <span>show</span>
+                                <select name="itemno">
+                                    <option value="25" selected="">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                <span>Per Page</span>
+                            </div>
+                        </div>
+                        <!--item1-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a Bangla Medium - Class 2 Tutor</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Dhaka, Shewrapara</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 9 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 2-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for Class 4 student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Dhaka, Shantinagar</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 9 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation2">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 3-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for English student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Dhaka, Shewrapara</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 9 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation3">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 4-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for Islamic Studies student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Cumilla, Police Line</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 30 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation4">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 5-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for School Admission Test student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Cumilla, Kaptan Bazar</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 50 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation5">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 6-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for Microsoft Office student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Chattogram, Chandgaon R/A, Block B</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 9 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation6">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 7-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for Music student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Dhaka, Shewrapara</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 9 Mins ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation7">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--item 8-->
+                        <div class="tutor-post-block">
+                            <div class="tutor-post-header">
+                                <h4>Need a tutor for IELTS student</h4>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span> Chattogram, Khulshi West</span>
+                                    </div>
+                                    <div class="p-2 posted-date">
+                                        Posted 1 Days ago (19/02/20)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-header-bottom">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2 ">
+                                        <p class=" category">Category: <span>Bangla Medium</span></p>
+                                        <p class=" class">Class: <span>Class 2</span></p>
+                                        <p class=" gender">Student Gender: <span>Male</span> </p>
+                                        <p class="tutor-gender">Tutor gender preference : <span>Female</span> </p>
+                                    </div>
+                                    <div class="p-2 tutor-post-body">
+                                        <p>3 days per week</p>
+                                        <p>Tutoring Time : <span class="time">05:00 pm</span> </p>
+                                        <p>Subjects : <span class="all-sub">All</span> </p>
+                                        <span>Salary: <span class="sallery-text">3000,</span> </span>
+                                        <span> No. of Students : <span class="student-txt">1</span> </span>
+                                    </div>
+                                    <div class="p-2 tutor-apply-content">
+                                        <i class="far fa-eye"></i>
+                                        <span>viewed by 3 person</span><br>
+                                        <button type="button" class="btn job-board-btn">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tutor-post-footer">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2">
+                                        <a class="btn  job-location-btn" data-toggle="collapse" href="#jobLocation8" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Job Location
+                                        </a>
+                                    </div>
+                                    <div class="p-2">
+
+                                        <button type="button" class="btn job-board-btn direction-btn">Get Direction</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="jobLocation8">
+                                <div class="card card-body">
+                                    <div id="map" class="text-center">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.23642489241!2d90.3649163142974!3d23.774593893770092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b10690db93%3A0x176c9d404786555b!2sIQSA%20SOFT-software%20company!5e0!3m2!1sen!2sbd!4v1582173360634!5m2!1sen!2sbd" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="" class="pagination_holder">
+                                    <ul class="clearfix">
+                                        <li style="margin-right:10px"><a href="javascript:void(0);">Pre</a></li>
+                                        <li><a href="#" class="active">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-board-filter">
+                        <div class="filter-header">
+                            <div class="d-flex justify-content-between  mb-3">
+                                <div class="p-2 job-p">
+                                    <i class="fas fa-filter"></i>
+                                    <span class="f-t">Filter</span>
+                                </div>
+                                <div class="p-2 job-p">
+                                    <a href="#"><span><i>Reset all fields</i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-city-content">
+                            <h4>City</h4>
+                            <div class="form-group field-signupform-locale required">
+                                <select id="city" class="form-control" name="" aria-required="true">
+                                    <option value="">Select City</option>
+                                    
+                                    <?php
 												foreach ($city as $cit)
 												{
 												?>
-													<option value="<?php echo ($cit->city == 'Select City')?'1':$cit->id; ?>"><?php echo $cit->city; ?></option>
-												<?php
+                                    <option value="<?php echo ($cit->city == 'Select City')?'1':$cit->id; ?>"><?php echo $cit->city; ?></option>
+                                   <?php
 												}
 												?>
-							                </select>
-				                		</div>
-									</div>
-								</div>
+                                </select>
+                            </div>
+                             <div class="filter-location-content">
+                            <h4>Location</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="location_show" class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Abdullahpur
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Mirpur 6
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Mirpur 8
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Dhanmondi
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Azimpur
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            shyamoli
+                                        </label>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Aftabnagar
+                                        </label>
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                           Agargaon
+                                        </label>
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Mirpur DOHS
+                                        </label>
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Asad Gate
+                                        </label>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Mohakhali
+                                        </label>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Ashkona
+                                        </label>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Badda
+                                        </label>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Baily Road
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Banani
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Motijheel
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Banasree
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox s-location">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Mugda
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                     <div class="show-more">Show more</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                       
+                        <div class="filter-category-content">
+                            <h4>Category</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Bangla Medium
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            English Medium
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            English version
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Religious Studies
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Admission Test
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Arts
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Language Learning
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Test Preparation
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Project/Assignment
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Special Skill Development
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Professional Skill Development
+                                        </label>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cls-course-content">
+                            <h4>Class/Courses</h4>
+                            <span class="filter-cls-text">Bangla Medium</span>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Pre-Schooling
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 5
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Play
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 6
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                          Nursery
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 7
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            KG
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 8
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 1
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 9
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 2
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 10
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 3
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            HSC- 1st Year
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 4
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            HSC- 2nd Year
+                                        </label>
+                                    </div>
+                              </div>                                                        
+                            </div>
+                            
+                           
+                            
+                        </div>
+                        <div class="filter-cls-course-eng">
+                              <h4>Class/Courses</h4>
+                              <span class="filter-cls-text">English version</span>
+                               <div class="row">
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Pre-Schooling
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 5
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Play
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 6
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                          Nursery
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 7
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            KG
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 8
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 1
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 9
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 2
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 10
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 3
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            HSC- 1st Year
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Class 4
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            HSC- 2nd Year
+                                        </label>
+                                    </div>
+                                </div>
+                               
+                               
+                            </div>
+                        </div>
+                        <div class="filter-gender-content">
+                             <h4>Gender</h4>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Male
+                                        </label>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                      <div class="checkbox">
+                                        <label style="font-size:13px;font-family: 'Poppins', sans-serif;cursor: pointer;">
+                                            <input type="checkbox" value="1" />
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Female
+                                        </label>
+                                    </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
 
-								<div id="location_show" class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 10px; padding-right: 0px;">
-
-								</div>
-
-								<div id="category_show" class="col-xs-12 col-sm-12 col-md-12">
-									<div class="form-group" style="padding-left: 0px;padding-right: 0px;">
-										<?php if(!empty($category)){ //unset($category[0]);?>
-											<label for="category"> Category </label>
-											<div>
-												<?php foreach ($category as $cat)
-												{
-												?>
-												<div class="styled-input-single">
-												<?php echo "<input type='checkbox' class='category styled' id='category_".$cat->id."' name='category[]' value='".$cat->id."'>"; ?>
-												<label for="category_<?=$cat->id?>" class="input-label-checkbox">
-						                            <?php echo $cat->category; ?>
-						                        </label>
-												</div>
-												<?php
-												}
-												?>
-											</div>
-										<?php } ?>
-
-									</div>
-								</div>
-
-								<div id="class_show" class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 10px;">
-
-						  		</div>
-
-						  		<div class="col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 20px;">
-						  			<div class="form-group" style="padding-left: 0px;padding-right: 0px;">
-						  				<div class='col-xs-12 col-md-12' style="padding-left: 0px;padding-right: 0px;">
-						  					<label> Gender </label>
-						  				</div>
-					                	<div class='col-xs-6 col-md-6' style='float: left; text-align: left; padding-left: 0px;'>
-					                		<div class="styled-input-single">
-					                			<input type='checkbox' id="Male" class='gender styled' name='gender[]' value='Male' checked="checked">
-						                        <label for="Male" class="input-label-checkbox">
-						                            Male
-						                        </label>
-						                    </div>
-					                	</div>
-
-					                	<div class='col-xs-6 col-md-6' style='float: left; text-align: left; padding-left: 5px;'>
-					                		<div class="styled-input-single">
-					                			<input type='checkbox' id="Female" class='gender styled' name='gender[]' value='Female' checked="checked">
-						                        <label for="Female" class="input-label-checkbox">
-						                            Female
-						                        </label>
-						                    </div>
-
-					                	</div>
-						  			</div>
-				                </div>
-							</div>
-                		</div>
-              		</div>
-              <!-- End single sidebar -->
-            <!-- End blog sidebar -->
-          </div>
-
-          <div class="col-lg-8 col-md-8 col-sm-12" id="job_list">
-          	<div class="loading" style="display: none;">
-            	<img src="<?php echo base_url(); ?>assets/panel/img/spinners/spinner_large.gif" alt="" width="64" height="64">
-        	</div>
-
-			<!-- <a class="pull-right" target="blank" style="color: #0675c1; font-size: 16px; margin: 15px" href="<?php echo site_url('landing/mapview') ?>">Our Coverage</a> -->
-            <!-- BEGAIN BLOG CONTENT -->
-            <div class="blogarchive_content" style="border: 1px solid transparent;">
-                <!-- BEGAIN SINGLE BLOG -->
-                <div class="col-lg-12 col-md-12 col-sm-12" id="landing_job_list_div" style="padding-left: 0px !important;">
-			          <!--<div class="">
-			          	<p style="font-weight: normal; color: #666; text-align: center; border-bottom: 1px solid #e0e0e0; padding: 10px; font-size: 16px;">
-			          		Total <?php echo $count_job; ?> job found.
-			          	</p>
-			          </div>-->
-	                  <?php foreach($jobs as $job){ ?>
-	                  <div class="panel panel-primary" style="margin-bottom: 25px !important; border: 0; ">
-						  <div class="panel-body" style="padding: 28px 19px 28px 30px;">
-						    <div class="row" style="position: relative;">
-								<div class="col-md-12 col-sm-12">
-									<p style="font-size: 13px !important; opacity: 0.7;  margin: 0 !important;">Job ID -  <?php echo $job->id; ?></p>
-
-									<p style="font-size: 20px; font-weight: bold; margin: 0 !important;">Need a tutor for <?php echo $job->sub_cat; ?> student</p>
-
-
-									<div class="row" style="font-size: 13px !important; margin: 7px 0 0 0;">
-										<div class="col-md-3 col-sm-12" style="padding-left: 0px;padding-right: 0px;">
-											<span style="font-weight: bold; color: #0675c1;">Category : </span><?php echo $job->category; ?>
-										</div>
-
-
-										<?php echo ($job->category == "English Medium")?"<div class='col-md-3 col-sm-12' style='padding-left: 0px;'><span style='font-weight: bold; color: #0675c1;'>Curriculum : </span>".ucfirst($job->english_medium_from)."</div>":""?>
-
-										<div class="col-md-3 col-sm-12" style="<?php echo ($job->category == "English Medium")?'padding-left: 0px;':'padding-left: 0px;'?>">
-											<span style="font-weight: bold; color: #0675c1;">Class : </span> <?php echo $job->sub_cat; ?>
-										</div>
-										<div class="col-md-3 col-sm-12" style="padding-left: 0px;">
-											<span style="font-weight: bold; color: #0675c1;">Student Gender : </span> <?php echo $job->student_gender; ?>
-										</div>
-
-										<div class="col-md-12 col-sm-12" style="padding-left: 0px;margin-top: 8px;">
-											<span style="font-weight: bold; font-size: 12px;"><?php echo $job->days_per_week; ?> <?php echo $job->days_per_week == 1 ? 'day' : 'days' ?> per week </span>
-										</div>
-
-									</div>
-								</div>
-								<div class="col-md-7 col-sm-12">
-
-									<p style="font-size: 12px !important; margin-top: 0px !important; margin-bottom: 0px !important;"><span style="font-weight: bold;">Salary : </span><?php echo $job->salary_range; ?> Tk, <span style="font-weight: 600;color: #212121;">Tutor gender preference :</span> <?php echo $job->preferred_gender; ?>, <span style="font-weight: 600;color: #212121;">No. of Students :</span> <?php echo $job->no_of_student; ?></p>
-
-									<?php if($job->subs != ''){ ?>
-									<p style="font-size: 12px !important; margin-top: 0px !important; margin-bottom: 0px !important;"><span style="font-weight: bold;">Subjects :</span> <?php echo $job->subs; ?></p>
-									<?php } ?>
-
-									<?php if($job->tutoring_time != ''){ ?>
-									<p style="font-size: 12px !important; margin-top: 0px !important; margin-bottom: 8px !important;"><span style="font-weight: bold;">Tutoring Time :</span> <?php echo date('h:i a', strtotime($job->tutoring_time)); ?></p>
-									<?php } ?>
-
-									<p style="padding-top: 7px; padding-bottom: 7px; font-size: 14px !important; font-weight: normal;">
-										<i class="fa fa-map-marker" style="color: #fff; width: 30px; height: 30px; border-radius: 50%; background: #0675c1; text-align: center; vertical-align: middle; line-height: 30px; font-size: 17px;"></i> <?php echo $job->city; ?>, <?php echo $job->location; ?>
-									</p>
-									<p style="font-size: 12px !important; opacity: 0.7;"><span style="">Other Requirements - </span><?php echo $job->other_req; ?></p>
-								</div>
-								<div class="col-md-5 col-sm-12 footer" style="padding-left: 0px;">
-
-					                <div class=" apply" style="padding-right: 0px;">
-					                	<!--<button class="btn default-btn pull-right">Apply</button>
-					                		<?php echo ($job->status=='done')?'#':base_url()."signin";?>
-					                	-->
-										<?php if ($job->latitude != 0 && $job->longitude != 0): ?>
-											<!-- Map Javascript Api -->
-											<button class="btn btn-danger get_location" data-map_gen="false" data-map_lat="<?php echo $job->latitude; ?>" data-map_lng="<?php echo $job->longitude; ?>" data-job_id="<?php echo $job->id; ?>" style="padding: 3px 12px" type="button" data-toggle="collapse" data-target="#collapse_<?php echo $job->id; ?>">Job Location</button>
-											<!-- <button class="btn btn-warning get_direction" data-map_lat="<?php echo $job->latitude; ?>" data-map_lng="<?php echo $job->longitude; ?>" data-job_id="<?php echo $job->id; ?>" style="padding: 3px 12px" type="button" data-toggle="collapse" data-target="#collapse_<?php echo $job->id; ?>">Get Direction</button> -->
-
-											<!-- Map Static Api -->
-											<!-- <button class="btn btn-danger get_location" data-map_gen="false" data-map_lat="<?php echo $job->latitude; ?>" data-map_lng="<?php echo $job->longitude; ?>" data-job_id="<?php echo $job->id; ?>" style="padding: 3px 12px" type="button" data-toggle="collapse" data-target="#collapse_<?php echo $job->id; ?>">Job Location</button> -->
-											<button class="btn btn-warning get_direction" data-map_lat="<?php echo $job->latitude; ?>" data-map_lng="<?php echo $job->longitude; ?>" data-job_id="<?php echo $job->id; ?>" style="padding: 3px 12px" type="button">Get Direction</button>
-										<?php endif; ?>
-					                	<button class="btn btn-success  applyJobSignInButton" data-job_id="<?php echo $job->id; ?>" style="padding: 3px 12px" type="button">Apply Now</button>
-					                	<br /><br />
-					                	<!--<p class="pull-right hidden" style="font-size: 10px">Job posted by <?php //echo $job->full_name; ?></p> -->
-					                	<p class="" style="font-size: 12px; opacity: 0.7;">Posted on <?php echo date('jS F, Y',strtotime($job->created_at)); ?></p>
-					                </div>
-								</div>
-
-								<!-- Map Javascript Api -->
-								<div class="col-md-12 collapse" id="collapse_<?php echo $job->id; ?>">
-									<div class="row">
-										<div class="col-md-12">
-											<div id="map_location_<?php echo $job->id; ?>" style="height: 300px; width: 100%; padding-top: 10px"></div>
-										</div>
-										<!-- <div class="col-md-6">
-											<div id="map_direction_panel_<?php echo $job->id; ?>" style="height: 300px; width: 100%; padding-top: 10px; overflow: scroll"></div>
-										</div> -->
-										<div class="col-md-12">
-											<br>
-											<hr>
-											<p>The exact location of this tuition job is inside this 100-meter circle</p>
-										</div>
-									</div>
-								</div>
-
-								<!-- Map Static Api -->
-								<!-- <div class="col-md-12 collapse" id="collapse_<?php echo $job->id; ?>">
-									<div class="static_api_image_<?php echo $job->id; ?>"></div>
-								</div>
-
-								<div class="outer_share">
-									<div id="inner_share">
-										<share-button style="color: #1f2c44;" data-url="<?php echo base_url('landing/job_board_single/'.$job->id); ?>" data-title="Need a tutor for <?php echo $job->sub_cat; ?> student"></share-button>
-									</div>
-				                </div> -->
-							</div>
-						  </div>
-					  </div>
-	                  <?php
-	                  }
-	                  ?>
-	                  <br />
-	                  	<nav>
-			            	<center><?php echo $links; ?></center>
-		          		</nav>
-                	</div>
-                	<div class="modal fade" id="applyJobSignInModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                		<div class="modal_loading" id="modal_loading" style="display: none;">
-			            	<img src="<?php echo base_url(); ?>assets/panel/img/spinners/spinner_large.gif" alt="" width="64" height="64">
-			        	</div>
-						<div class="modal-dialog" style="margin-top: 50px !important;">
-					    	<!--<div class="modal-content" style="border-radius: 0px !important;">
-					    		<div class="modal-header">
-							    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							        <h3 class="modal-title" id="myModalLabel" style="color: #0072bf;">Sign In</h3>
-									<hr/>
-							    </div>
-							    <form class="form-horizontal apply_job_signin_form" id="apply_job_signin_form" method="post" role="form">
-							    	<input type="hidden" name="job_id" id="modal_job_id" />
-							    	<div class="modal-body">
-								  		<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-12 input_margin_bottom">
-										    	<input type="email" class="form-control" required="required" name="tutor_email" placeholder="Please provide your email id" />
-										    </div>
-
-											<div class="col-xs-12 col-sm-12 col-md-12 input_margin_bottom">
-										    	<input type="password" class="form-control" required="required" name="tutor_password" placeholder="Enter your password" />
-										    </div>
-								  		</div>
-								  	</div>
-
-								    <div class="modal-footer">
-								    	<button type="button" class="btn btn-back" id="back_to_first_form" style="display: none;">Back</button>
-				        				<button type="submit" name="submit_first" class="btn btn-caretutors apply_job_signin" id="apply_job_signin">Continue</button>
-				      				</div>
-			      				</form>
-			      			</div>-->
-					    </div>
-					</div>
-				</div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
    </div>
 </section>
     <!--=========== END BLOG SECTION ================-->
