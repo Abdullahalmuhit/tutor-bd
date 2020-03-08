@@ -33,9 +33,7 @@
 
 <body style="background-color: #edeff0;">
 
-
-
-    <div class="wrapper d-flex align-items-stretch">
+    <div style="height: 100%;overflow: scroll;" class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4">
                 <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(<?php echo base_url();?>assets/img/h3.png);"></a>
@@ -69,6 +67,18 @@
                         Dashboard
                     </a>
                 </li>
+
+
+                <li<?php
+                if ($includePage == "") {
+                    echo ' class="act_section"';
+                };
+                ?>>
+                <a  href="#mailbox_new_message" data-uk-modal="{center:true}"><i class="fa fa-hourglass-start" ></i> Post Jobs</a>
+                </li>
+
+
+
                 <!-- <li<?php
                 if ($includePage == "caretutor_parents_cvs") {
                     echo ' class="act_section"';
@@ -319,15 +329,17 @@
                 </ul>
             </div>
         </nav>
-        <!-- Page Content  -->
-        
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</body>
+
+
+
+<?php echo $footer;?>
 
 
     
-</body>
+
 
 
 

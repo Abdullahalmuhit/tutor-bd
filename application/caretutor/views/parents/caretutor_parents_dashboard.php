@@ -1,157 +1,22 @@
-
-<?php defined('safe_access') or die('Restricted access!'); ?>
-<style type="text/css">
-    @media (max-width: 480px) {
-        .uk-width-small-1-3, .uk-width-small-2-3{
-          width: auto;
-        }
-    }
-</style>
-
 <div id="page_content">
-    
-        
-
+    <div id="page_content_inner">
+<div  class="wrapper d-flex align-items-stretch">
+        <!-- Page Content  -->
         <div id="content" class="">
             <div class="container">
-            <?php if ($this->session->userdata('gretings')) { ?>
+                <!-- <?php if ($this->session->userdata('gretings')) { ?>
             <div class="uk-alert uk-alert-success uk-text-bold uk-text-center"> You have successfully posted your tutor requirements. Best matched tutor profile coming soon. Thank you for choosing our platform. </div>
-        <?php } ?>
+        <?php } ?> -->
                 <div class="tutor-profile-header text-center">
                     <h4>Tutor Profile</h4>
                 </div>
                 <div class="tutor-profile">
                     <div class="row">
-                        <div class="item-b col-md-4">
-                            <div class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-b col-md-4">
-                            <div class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="item-b col-md-4">
                             <div style="margin-right: 15px;" class="tutor-profile-content">
                                 <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-b col-md-4">
-                            <div style="margin-right: 15px;" class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-b col-md-4">
-                            <div style="margin-right: 15px;" class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
-
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-b col-md-4">
-                            <div style="margin-right: 15px;" class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="images/user-image.png" class="img-fluid" alt="">
+                                    <img src="<?php echo base_url();?>assets/img/h3.png" class="img-fluid" alt="">
                                     <p>Rizvi Ahmed</p>
                                     <button type="button" class="btn">View profile</button>
                                 </div>
@@ -179,6 +44,7 @@
 
 
             </div>
+            
 
             <div class="container">
                 <div class="tutor-profile-header text-center">
@@ -241,16 +107,12 @@
         </div>
     </div>
 </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
-<!-- <div class="md-fab-wrapper">
-<a class="md-fab md-fab-accent" href="#mailbox_new_message" data-uk-modal="{center:true}">
-    <i class="material-icons">&#xE145;</i>
-</a>
-</div> -->
-
-<div class="uk-modal" id="mailbox_new_message">
-    <div class="uk-modal-dialog">
+    <div class="uk-modal" id="mailbox_new_message" id="page_content">
+    <div class="uk-modal-dialog" id="page_content_inner">
         <button class="uk-modal-close uk-close" type="button"></button>
         <form method="post" id="job_add_form" class="uk-form-stacked new_job_add">
             <input type="hidden" value="1" name="step" id="step" />
@@ -450,9 +312,32 @@
         </form>
     </div>
 </div>
-<?php $this->session->unset_userdata('gretings'); ?>
-<style>
-    .uk-datepicker{
-        z-index: 2094;
-    }
-</style>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+

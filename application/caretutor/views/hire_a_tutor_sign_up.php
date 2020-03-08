@@ -223,7 +223,7 @@
 								    	</div>
 								    </div>
 
-									 <div class="col-xs-12 col-sm-12 col-md-6 input_margin_bottom input_margin_mobile">							<div class="form-group">
+									 <div class="col-xs-12 col-sm-12 col-md-6 input_margin_bottom input_margin_mobile">					<div class="form-group">
 									  		<label for="selhear">How Did You Hear About Us?</label>
 									  		<div class="select_label">
 										    	<select class="form-control selhear" id="selhear" name="selhear">
