@@ -1,6 +1,6 @@
 <?php defined('safe_access') or die('Restricted access!'); ?>
-	<div id="page_content">
-        <div id="page_content_inner">
+	<!-- <div id="page_content">
+        <div id="page_content_inner"> -->
             <form action="" class="uk-form-stacked" id="user_edit_form">
                 <div class="uk-grid" data-uk-grid-margin>
                     <div class="uk-width-large-7-10">

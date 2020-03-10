@@ -251,20 +251,32 @@
 
 
 
+<!-- Javascript Files
+     ================================================== -->
 
+<<<<<<< HEAD
+=======
+<!-- initialize jQuery Library -->
+
+>>>>>>> 6b20a04a7765eee96f32f110bdc7ebab3fc5beff
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--ref for help video-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <!--ref for help video-->
 
+<<<<<<< HEAD
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmm9-boRblkDLrsyszTIS0sIy7dQZNI7U&callback=initMap"></script> 
  
 <script src="<?php echo base_url(); ?>assets/landing/js/jquery.ui.map.js"></script> 
+=======
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmm9-boRblkDLrsyszTIS0sIy7dQZNI7U&callback=initMap"></script> -->
+<!-- <script src="<?php echo base_url(); ?>assets/landing/js/jquery.ui.map.js"></script> -->
+>>>>>>> 6b20a04a7765eee96f32f110bdc7ebab3fc5beff
 
 <script src="<?php echo base_url(); ?>assets/landing/js/wow.min.js"></script>
 
-
-<script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script> 
+<script src="<?php echo base_url(); ?>assets/landing/js/bootstrap.min.js"></script>
+<!-- <script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script> -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
 
 <script src="<?php echo base_url(); ?>assets/landing/js/jquery.superslides.min.js" type="text/javascript"></script>
@@ -356,6 +368,7 @@
         })
     });
     </script>
+<<<<<<< HEAD
 <!-- Custom js-->
 <script src="<?php echo base_url(); ?>assets/js/frontend.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/close.js"></script>
@@ -364,6 +377,10 @@
 <script src="<?php echo base_url(); ?>assets/landing/js/custom.js"></script>
 <script src="<?php echo base_url(); ?>assets/landing/js/slick_slider.js"></script>
  
+=======
+
+
+>>>>>>> 6b20a04a7765eee96f32f110bdc7ebab3fc5beff
 
 
 
@@ -400,6 +417,7 @@
         });
 
     </script>
+<<<<<<< HEAD
     <script type="text/javascript">
 	jQuery(document).ready(function($) {
 	var sliderTimer = 5000;
@@ -476,6 +494,15 @@
   $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+=======
+    <!-- Custom js-->
+<script src="<?php echo base_url(); ?>assets/js/frontend.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/close.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/apply_job.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/job_filter_landing.js"></script>
+<script src="<?php echo base_url(); ?>assets/landing/js/custom.js"></script>
+<script src="<?php echo base_url(); ?>assets/landing/js/slick_slider.js"></script>
+>>>>>>> 6b20a04a7765eee96f32f110bdc7ebab3fc5beff
 
 </body>
 </html>

@@ -85,14 +85,7 @@
                         <div class="md-card">
                             <div class="user_heading">
                                 <div class="user_heading_avatar fileinput fileinput-new" data-provides="fileinput">
-                                    <div class="fileinput-new thumbnail">
-                                    	<?php
-                                    	if(!empty($profile_pic_info) && $profile_pic_info['profile_pic'] != ''){ ?>
-                                    		<img src="<?php echo base_url("assets/upload/".$profile_pic_info['profile_pic']); ?>" />
-                                    	<?php }else{ ?>
-                                    		<img src="<?php echo base_url();?>assets/panel/img/avatars/user.png" />
-                                    	<?php }?>
-                                    </div>
+                                   
                                     <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                     <!-- <div class="user_avatar_controls">
                                         <span class="btn-file">
@@ -102,11 +95,7 @@
                                         </span>
                                         <a href="#" class="btn-file fileinput-exists" data-dismiss="fileinput"><i class="material-icons">&#xE5CD;</i></a>
                                     </div> -->
-                                    <div class="user_avatar_controls">
-                                        <span class="btn-file">
-                                            <a class="fileinput-new" href="#upload_new_profile_pic" data-uk-modal="{center:true}"><i class="material-icons">&#xE2C6;</i></a>
-                                        </span>
-                                    </div>
+                                   
                                 </div>
                                 <div class="user_heading_content">
                                     <h2 class="heading_b"><span class="uk-text-truncate" id="user_edit_uname"><?php echo (!empty($user_data))?$user_data->full_name:'Your name'; ?></span>
@@ -122,8 +111,11 @@
                                     	} ?>
                                     	<span class="sub-heading">Profile Completed: <?php echo (!empty($user_data))?$user_data->profile_percentage:'0'; ?>%, <?php echo $cat_name; ?></span>
                                     	<!-- <span class="sub-heading" id="user_edit_position"><?php echo $cat_name; ?></span> -->
-                                    </h2>
-                                </div>
+									</h2>
+									
+								</div>
+									</hr>
+								
                                 <!--<button type="submit" class="md-fab md-fab-small md-fab-success" id="user_edit_submit">
                                     <i class="material-icons">&#xE161;</i>
                                 </button>-->
@@ -893,7 +885,7 @@
                     <div class="uk-width-large-3-10">
                         <div class="md-card">
                             <div class="md-card-content" style="padding: 0 0 16px;">
-                                <h3 class="heading_c uk-margin-bottom text_center" style="padding: 15px 10px; font-size: 18px; background-color: #0675c1; color: #fff;">Make Your Profile Strong</h3>
+                                <h3 class="heading_c uk-margin-bottom text_center" style="padding: 15px 10px; font-size: 18px; background-color: #62B235; color: #fff;">Make Your Profile Strong</h3>
                                 <div class="uk-grid" data-uk-grid-margin style="padding:0 25px 0 15px;">
                                 <div class="uk-width-large-1-1 uk-width-medium-1-1">
                                     <a class="md-btn md-btn-warning uk-align-center uk-width-medium-1-1" href="#mailbox_new_message" data-uk-modal="{center:true}" >Upload Your Credential</a>

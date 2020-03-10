@@ -130,4 +130,5 @@
             </div>
         </nav>
     </div>
+    <?php echo $footer;?>
 </header><!-- main header end -->

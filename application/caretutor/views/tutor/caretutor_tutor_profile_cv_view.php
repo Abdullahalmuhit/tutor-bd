@@ -32,7 +32,8 @@
                                 	<!--<span class="sub-heading"><?php echo $user_data->email; ?></span>
                                 	<span class="sub-heading"><?php echo $user_data->mobile_no; ?></span>-->
                                 </h2>
-                            </div>
+							</div>
+									
                         </div>
                         <div class="user_content">
                             <!-- <ul id="user_profile_tabs" class="uk-tab" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal',active:<?php echo $step; ?>}">

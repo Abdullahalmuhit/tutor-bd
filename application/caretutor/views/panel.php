@@ -29,7 +29,7 @@ define('safe_access', true);
         ?>
 
     </head>
-    <body class="sidebar_main_open<?php if (isset($body_class)) echo ' ' . $body_class; ?>">
+    <body <?php if (isset($body_class)) echo ' ' . $body_class; ?>">
 
         <?php $this->load->view('partials/header_main'); ?>
 

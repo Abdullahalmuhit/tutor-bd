@@ -1,28 +1,67 @@
-<?php // dd($user_data) ?>
-<!-- main sidebar -->
-<aside id="sidebar_main">
-    <a href="#" class="uk-close sidebar_main_close_button"></a>
-    <div class="sidebar_main_header">
-        <div class="sidebar_logo">
-            <a href="javascript:void(0)">
+
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/css/bootstrap-main-cdn.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!--Google fonts--->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Student/Parent Dashboard</title>
+
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/jquery.fancybox.min.css">
+
+<!--Swiper slider CSS-->
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/swiper.min.css">
+    <!--Owl Carosuel css--->
+  
+
+ <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.carousel.min.css">
+<!--Main CSS-->
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/dashboard.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style2.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style.css">
+
+
+
+
+
+<body style="background-color: #edeff0;">
+
+    <div style="height: 100%;overflow: scroll;" class="wrapper d-flex align-items-stretch">                                       
+        <nav id="sidebar">
+                                       
+        <div class="user_avatar_controls">
+                                        <span class="btn-file">
+                                            <a class="fileinput-new" href="#upload_new_profile_pic" data-uk-modal="{center:true}"><i class="material-icons">&#xE2C6;</i>Upload Profile</a>
+                                        </span>
+                                    </div>
+                                    
+            <div class="p-4 tutor-dashboard-menu">
+                <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(<?php echo base_url();?>assets/img/h3.png);"></a>
+                <div class="sidebar-profile">
+                    <p class="p-text"><a href="javascript:void(0)">
                 <?php
                 if ($this->session->userdata('user_type') == 'tutor') {
+                    
                     if ($user_verification == 3 && $user_data->is_verified == 1) {
                         ?><i class="uk-icon-check-circle" style="color: #fff;" data-parsley-trigger="keyup" data-uk-tooltip="{pos:'right'}" title="Verified"></i>&nbsp;<?php
                     }
                 }
                 echo 'Hello ' . explode(" ", $this->session->userdata('full_name'))[0] . ',<br/> ' . ucfirst($this->session->userdata('user_type')) . ' ID ' . $this->session->userdata('id') . '';
                 ?>
-            </a>
-        </div>
+            </a></p>
+          
+                </div>
 
-        <!-- <div class="sidebar_actions">
-            <select id="lang_switcher" name="lang_switcher">
-                <option value="gb" selected>English</option>
-            </select>
-        </div> -->
-    </div>
-    <?php
+                <ul class="list-unstyled components mb-5">
+                    <?php
     if ($this->session->userdata('user_type') == 'guardian') {
         ?>
         <div class="menu_section">
@@ -37,6 +76,16 @@
                         Dashboard
                     </a>
                 </li>
+
+
+                <li<?php
+                if ($includePage == "") {
+                    echo ' class="act_section"';
+                };
+                ?>>
+                <a  href="#mailbox_new_message" data-uk-modal="{center:true}"><i class="fa fa-hourglass-start" ></i> Post Jobs</a>
+                </li>
+
                 <!-- <li<?php
                 if ($includePage == "caretutor_parents_cvs") {
                     echo ' class="act_section"';
@@ -281,22 +330,13 @@
                 </li>
             </ul>
         </div>
-        <?php
-    }
-    ?>
-</aside><!-- main sidebar end -->
 
-<!-- main sidebar -->
-<?php
-if ($this->session->userdata('user_type') == 'tutor') {
-    ?>
-    <aside id="sidebar_main" class="profile_meter  uk-hidden-small" style="top: 380px;">
-        <a href="#" class="uk-close sidebar_main_close_button"></a>
-        <div class="sidebar_main_header">
-            <div class="sidebar_logo">
+        <div class="menu_section">
+        <ul>
+     
+             <div class="sidebar_logo">
                 <a href="javascript:void(0)"><b>Complete Your Profile</b></a>
             </div>
-
             <?php
             $tution = $education = $personal = $credential = $test = 0;
                     $name = $father_info = $mother_info = $overview = $email = $contact_num = $additional_num = $gender = $social_link = $det_address = $emergency_contact = $nid = $hons = $hsc = $ssc = $edus = $availability = $salary_range = $tution_style = $tution_cat = $tution_cls = $pref_sub = $city = $location = $pref_location = $tution_place = $tution_exp = $total_exp = $tution_exp_det = $pro_pic = 0;
@@ -424,23 +464,19 @@ if ($this->session->userdata('user_type') == 'tutor') {
                     $completed = $name + $pro_pic + $father_info + $contact_num + $email + $availability + $tution_exp + $tution_exp_det + $total_exp + $tution_place + $location + $city + $pref_location + $tution_style + $tution_cat + $tution_cls + $pref_sub + $salary_range + $emergency_contact + $edus + $nid + $social_link + $det_address + $additional_num + $gender + $mother_info + $overview + $tution + $education + $personal + $credential + $test;
 
             ?>
-
-            <div class="uk-panel uk-panel-box uk-panel-box-primary uk-padding-remove sidebar_actions uk-margin-small-top">
-                <div class="uk-progress">
+            <div class="uk-progress">
                     <div class="uk-progress-bar" style="width: <?php echo $user_data->profile_percentage; ?>%;"><?php echo $user_data->profile_percentage; ?>%</div>
                 </div>
-            </div>
-        </div>
 
-        <?php
-        //$step = 0;
-        $clsDisable_for_2 = ($step == 0) ? "uk-disabled" : "";
-        $clsDisable_for_3 = ($step == 0 || $step == 1) ? "uk-disabled" : "";
-        ;
-        ?>
-        <div class="menu_section" id="menu_section">
-            <ul>
-                <li>
+                <?php
+                    //$step = 0;
+                    $clsDisable_for_2 = ($step == 0) ? "uk-disabled" : "";
+                    $clsDisable_for_3 = ($step == 0 || $step == 1) ? "uk-disabled" : "";
+                    ;
+                ?>
+
+                    </li>
+                    <li>
                     <a href="javascript:void(0)">
                         <?php if (!empty($tution_info)) { ?>
                             <span class="menu_icon uk-icon-university uk-text-success"></span>
@@ -489,7 +525,6 @@ if ($this->session->userdata('user_type') == 'tutor') {
                         Give a test
                     </a>
                 </li>
-
                 <li>
                     <a href="#mailbox_new_message" data-uk-modal="{center:true}">
                         <?php if ($credential_info_count > 3) { ?>
@@ -502,9 +537,25 @@ if ($this->session->userdata('user_type') == 'tutor') {
                         Upload credential
                     </a>
                 </li>
-            </ul>
+                </ul>
         </div>
         <?php
     }
     ?>
-</aside><!-- main sidebar end -->
+    
+        </div>  
+        </nav>
+
+
+</body>
+
+
+
+<?php echo $footer;?>
+
+
+    
+
+
+
+

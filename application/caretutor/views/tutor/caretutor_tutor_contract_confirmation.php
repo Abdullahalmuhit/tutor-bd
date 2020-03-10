@@ -1,5 +1,6 @@
 
-<div id="page_content">
+<div id="page_content" style="width:100%">
+
     <div id="page_content_inner">
         <div class="uk-grid" data-uk-grid-margin data-uk-grid-match id="user_profile">
             <div class="uk-width-large-7-10">
