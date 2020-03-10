@@ -332,7 +332,7 @@ a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #f8b739;
+    color: #333;
 }
 
 a:hover,
@@ -436,6 +436,7 @@ h5,
     transition: all 0.3s;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .05);
     box-shadow: 0 50px 50px 0 rgba(0, 0, 0, .08);
+    margin-top: 35px;
 }
 
 #sidebar.active {
@@ -534,4 +535,9 @@ a[data-toggle="collapse"] {
 
 .footer p {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.tutor-dashboard-menu {
+    height: auto;
+    background-color: #fff;
 }

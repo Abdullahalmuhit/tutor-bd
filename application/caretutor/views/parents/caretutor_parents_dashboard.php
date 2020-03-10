@@ -1,5 +1,16 @@
+<?php defined('safe_access') or die('Restricted access!'); ?>
+<style type="text/css">
+    @media (max-width: 480px) {
+        .uk-width-small-1-3, .uk-width-small-2-3{
+          width: auto;
+        }
+    }
+</style>
 <div id="page_content">
     <div id="page_content_inner">
+    <?php if ($this->session->userdata('gretings')) { ?>
+            <div class="uk-alert uk-alert-success uk-text-bold uk-text-center"> You have successfully posted your tutor requirements. Best matched tutor profile coming soon. Thank you for choosing our platform. </div>
+        <?php } ?>
 <div  class="wrapper d-flex align-items-stretch">
         <!-- Page Content  -->
         <div id="content" class="">
@@ -112,6 +123,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <div class="uk-modal" id="mailbox_new_message" id="page_content">
+        
     <div class="uk-modal-dialog" id="page_content_inner">
         <button class="uk-modal-close uk-close" type="button"></button>
         <form method="post" id="job_add_form" class="uk-form-stacked new_job_add">

@@ -1,19 +1,11 @@
-<div id="page_content">
+<div id="page_content" style="width:100%">
     <div id="page_content_inner">
         <div class="uk-grid" data-uk-grid-margin>
             <div class="uk-width-large-7-10">
                 <div class="md-card">
                     <div class="user_heading">
                         <div class="user_heading_avatar fileinput fileinput-new" data-provides="fileinput">
-                            <div class="fileinput-new thumbnail">
-                                <?php
-                                if (!empty($profile_pic_info) && $profile_pic_info['profile_pic'] != '') { ?>
-                                    <img src="<?php echo base_url("assets/upload/" . $profile_pic_info['profile_pic']); ?>" />
-                                <?php } else {
-                                    ?>
-                                    <img src="<?php echo base_url(); ?>assets/panel/img/avatars/user.png" />
-<?php } ?>
-                            </div>
+                          
                             <div class="fileinput-preview fileinput-exists thumbnail"></div>
                             <!-- <div class="user_avatar_controls">
                                 <span class="btn-file">
@@ -41,6 +33,7 @@
                                 <!-- <span class="sub-heading" id="user_edit_position"><?php echo $cat_name; ?></span> -->
                             </h2>
                         </div>
+                         
                         <!--<button type="submit" class="md-fab md-fab-small md-fab-success" id="user_edit_submit">
                             <i class="material-icons">&#xE161;</i>
                         </button>-->

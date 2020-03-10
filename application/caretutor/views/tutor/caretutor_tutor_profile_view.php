@@ -768,7 +768,7 @@
              <div class="uk-width-large-3-10">
                 <div class="md-card">
                     <div class="md-card-content" style="padding: 0 0 16px;">
-                        <h3 class="heading_c uk-margin-bottom text_center" style="padding: 15px 10px; font-size: 1.125em; background-color: #0675c1; color: #fff;">Make Your Profile Strong</h3>
+                        <h3 class="heading_c uk-margin-bottom text_center" style="padding: 15px 10px; font-size: 1.125em; background-color: #62B235; color: #fff;">Make Your Profile Strong</h3>
                         <div class="uk-grid" data-uk-grid-margin style="padding:0 25px 0 15px;">
                         <div class="uk-width-large-1-1 uk-width-medium-1-1">
                             <a class="md-btn md-btn-warning uk-align-center uk-width-medium-1-1" href="#mailbox_new_message" data-uk-modal="{center:true}" >Upload Your Credential</a>

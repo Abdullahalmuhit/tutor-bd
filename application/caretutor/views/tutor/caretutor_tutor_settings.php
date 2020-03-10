@@ -3,7 +3,7 @@ defined('safe_access') or die('Restricted access!');
 $verified = ($verify_data == NULL) ? -1 : $verify_data->status;
 ?>
 
-<div id="page_content">
+<div id="page_content" style="width:100%">
     <div id="page_content_inner">
         <form action="" class="uk-form-stacked" id="user_edit_form">
             <div class="uk-grid" data-uk-grid-margin>

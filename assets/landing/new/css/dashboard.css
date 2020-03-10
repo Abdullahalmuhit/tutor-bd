@@ -15,7 +15,7 @@
 }
 
 header {
-    background: green;
+    background: #62B235;
 }
 
 .user-dropdown img {
@@ -222,8 +222,9 @@ header {
 }
 
 #content {
-    padding-top: 0px !important;
+    padding-top: 40px !important;
     margin-left: 15px;
+    margin-left: 40px!important;
 }
 
 .dashboard-header {

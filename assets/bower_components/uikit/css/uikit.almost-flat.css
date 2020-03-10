@@ -1176,19 +1176,19 @@ iframe {
     /* Fifths */
     .uk-width-medium-1-5,
     .uk-width-medium-2-10 {
-        width: 20%;
+        width: auto;
     }
     .uk-width-medium-2-5,
     .uk-width-medium-4-10 {
-        width: 40%;
+        width: auto;
     }
     .uk-width-medium-3-5,
     .uk-width-medium-6-10 {
-        width: 60%;
+        width: auto;
     }
     .uk-width-medium-4-5,
     .uk-width-medium-8-10 {
-        width: 80%;
+        width: auto;
     }
     /* Sixths */
     .uk-width-medium-1-6 {
@@ -1273,6 +1273,7 @@ iframe {
     }
     .uk-width-large-3-10 {
         width: 30%;
+        padding-top: 10px;
     }
     .uk-width-large-7-10 {
         width: 70%;
@@ -9744,6 +9745,7 @@ a.uk-thumbnail:focus {
 
 [class*='uk-float-'] {
     max-width: 100%;
+    padding-left: 176px;
 }
 
 

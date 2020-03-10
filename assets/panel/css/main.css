@@ -1009,7 +1009,7 @@
 }
 
 .uk-progress-bar {
-    background: #0675c1;
+    background: #62B235;
     display: inline-table;
 }
 
@@ -2599,7 +2599,7 @@ a.uk-datepicker-table-muted {
 }
 
 .uk-tab>li.uk-active>a {
-    background: green;
+    background: #62B235;
     color: #ffffff;
 }
 
@@ -3495,7 +3495,7 @@ a.uk-datepicker-table-muted {
 .md-btn-primary:hover,
 .md-btn-primary:focus,
 .md-btn-primary:active {
-    background: green;
+    background: #62B235;
     color: #fff;
 }
 
@@ -3503,7 +3503,7 @@ a.uk-datepicker-table-muted {
 .md-btn-success:hover,
 .md-btn-success:focus,
 .md-btn-success:active {
-    background: green;
+    background: #62B235;
     color: #fff;
 }
 
@@ -3950,7 +3950,7 @@ a.uk-datepicker-table-muted {
 .md-card .md-card-toolbar.toolbar_green .md-card-toolbar-heading-text,
 .md-card .md-card-toolbar.toolbar_orange .md-card-toolbar-heading-text,
 .md-card .md-card-toolbar.toolbar_background .md-card-toolbar-heading-text {
-    color: #fff;
+    color: #000;
 }
 
 .md-card .md-card-toolbar.toolbar_cyan {
@@ -3958,7 +3958,8 @@ a.uk-datepicker-table-muted {
 }
 
 .md-card .md-card-toolbar.toolbar_blue {
-    background: #0675c1;
+    background: #fff;
+    border-bottom: 1px solid;
 }
 
 .md-card .md-card-toolbar.toolbar_green {
@@ -6708,6 +6709,7 @@ pre.line-numbers>code {
 .selectize-control {
     position: relative;
     display: grid;
+    padding-top: 10px;
 }
 
 .selectize-dropdown,
@@ -8769,7 +8771,7 @@ div.ganttview .ui-resizable-w {
 #header_main .uk-navbar {
     border: none;
     background: none;
-    background-color: green;
+    background-color: #62B235;
 }
 
 #header_main .uk-navbar .uk-navbar-nav {
@@ -9538,10 +9540,11 @@ center {
 
 .user_heading {
     padding: 24px;
-    background: #0675c1;
+    background: #fff;
     color: #fff;
     position: relative;
     box-sizing: border-box;
+    border-bottom: 1px solid #e8e4e4;
     -webkit-transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -9673,7 +9676,7 @@ only screen and (min-resolution: 2dppx) {
 .user_heading_content .heading_a .sub-heading,
 .user_heading_content .heading_b .sub-heading,
 .user_heading_content .heading_c .sub-heading {
-    color: #fff;
+    color: #000;
 }
 
 .user_heading_content .user_stats {
@@ -10053,11 +10056,12 @@ body.pace-done>.page_preloader {
 
 #page_content {
     height: 100%;
+    width: 100%;
     box-sizing: border-box;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
     -webkit-overflow-scrolling: touch;
-    position: relative;
+    /* position: relative; */
 }
 
 #page_content:before {
