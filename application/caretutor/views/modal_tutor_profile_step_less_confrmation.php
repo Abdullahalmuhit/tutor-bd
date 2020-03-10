@@ -10,7 +10,7 @@
 	  		<p style="padding-top: 7px;text-align: center;">Please complete your profile to apply this job </p>
 	    </div>
 	  	<div class="col-xs-12 col-sm-12 col-md-12" id="tutor_profile_link">
-			<a style="line-height: 46px;" href="<?php echo base_url('tutor/dashboard'); ?>" class="btn btn-caretutors">Continue</a>
+			<a style="line-height: 46px;" href="<?php echo base_url('tutor/dashboard'); ?>" class="btn btn-caretutors apply-job-complate-btn">Continue</a>
 	  	</div>
 		
 	</div>

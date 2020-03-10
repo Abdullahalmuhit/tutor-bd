@@ -60,9 +60,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url();?>assets/img/favicon.png" />
+<link href="<?php echo base_url();?>assets/landing/css/font-awesome.min.css" rel="stylesheet">
 
-
-
+<!-- Main structure css file -->
+    <link href="<?php echo base_url();?>assets/landing/style.css" rel="stylesheet">
 
     <script type="text/javascript">
         var BASE_URL = "<?php echo base_url();?>";
@@ -122,6 +123,10 @@
     <!--Bootstrap CSS-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    
+     <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/css/animate.css">
 
     <!--Fancybox css-->
 
@@ -130,18 +135,12 @@
     <!--Swiper slider CSS-->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/swiper.min.css">
 
-    <!--owl carosuel css/js-->
-    <script src="<?php echo base_url(); ?>assets/landing/new/js/jquery.min.js"></script>
-
-    <script src="<?php echo base_url(); ?>assets/landing/new/js/script.js"></script>
-
-    <script src="<?php echo base_url(); ?>assets/landing/new/js/new-script.js"></script>
-
-    <script src="<?php echo base_url(); ?>assets/landing/new/js/owl.js"></script>
-
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.css">
+    <!--owl carosuel css-->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.theme.default.css">
 
     <!--Main CSS-->
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/silk.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style.css">
 
 

@@ -6,7 +6,7 @@
         <div class="container ">
             <div class="row footer-m">
                 <div class="col-md-3">
-                    <div class="footer-tutor-about">
+                    <div class="footer-tutor-about  wow fadeInLeft">
                         <h2>Top Subjects</h2>
                         <div class="row">
                             <div class="col-sm-6">
@@ -57,6 +57,14 @@
                                 <i class="fas fa-angle-right"></i>
                                 <span><a href="#">Biology</a></span>
                             </div>
+                             <div class="col-sm-6">
+                                <i class="fas fa-angle-right"></i>
+                                <span><a href="#">Accounting</a></span>
+                            </div>
+                             <div class="col-sm-6">
+                                <i class="fas fa-angle-right"></i>
+                                <span><a href="#">Social Science</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,6 +85,8 @@
                                 <a href="#"> <i class="fas fa-angle-right"></i> Careers</a>
                                 <br>
                                 <a href="<?php echo base_url('landing/faq'); ?>"> <i class="fas fa-angle-right"></i> FAQ</a>
+                                <br>
+                                <a href="<?php echo base_url('landing/team'); ?>"> <i class="fas fa-angle-right"></i> Our Team</a>
                             </p>
                         </div>
                     </div>
@@ -137,7 +147,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <p>Copyright &copy;2020 iqsasoft.com All Rights Reserved</p>
+                        <p>Copyright &copy;2020 <a href="https://iqsasoft.com/" target="_blank">iqsasoft.com</a> All Rights Reserved</p>
                     </div>
                 </div>
             </div>
@@ -242,11 +252,13 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--ref for help video-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <!--ref for help video-->
 
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmm9-boRblkDLrsyszTIS0sIy7dQZNI7U&callback=initMap"></script> 
+ 
 <script src="<?php echo base_url(); ?>assets/landing/js/jquery.ui.map.js"></script> 
 
 <script src="<?php echo base_url(); ?>assets/landing/js/wow.min.js"></script>
@@ -351,15 +363,20 @@
 <script src="<?php echo base_url(); ?>assets/js/job_filter_landing.js"></script>
 <script src="<?php echo base_url(); ?>assets/landing/js/custom.js"></script>
 <script src="<?php echo base_url(); ?>assets/landing/js/slick_slider.js"></script>
-
+ 
 
 
 
 <!--new-->
+  <script src="<?php echo base_url(); ?>assets/landing/new/js/script.js"></script>
+  
+<script src="<?php echo base_url(); ?>assets/landing/new/js/owl.carousel.min.js"></script>
+
 
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+ <script src="<?php echo base_url(); ?>assets/landing/new/js/silk.min.js"></script>
  <!--Fancybox js-->
  
  <script src="<?php echo base_url(); ?>assets/landing/new/js/fancybox.js"></script>
@@ -383,7 +400,82 @@
         });
 
     </script>
-    
+    <script type="text/javascript">
+	jQuery(document).ready(function($) {
+	var sliderTimer = 5000;
+  var beforeEnd = 500;
+	var $imageSlider = $('.image-slider');
+	$imageSlider.slick({
+		autoplay: true,
+		autoplaySpeed: sliderTimer,
+		speed: 1000,
+		arrows: true,
+		dots: false,
+		adaptiveHeight: true,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+	});
+
+	function progressBar(){
+		$('.slider-progress').find('span').removeAttr('style');
+		$('.slider-progress').find('span').removeClass('active');
+		setTimeout(function(){
+			$('.slider-progress').find('span').css('transition-duration', (sliderTimer/1000)+'s').addClass('active');
+		}, 100);
+	}
+	progressBar();
+	$imageSlider.on('beforeChange', function(e, slick) {
+		progressBar();
+	});
+  $imageSlider.on('afterChange', function(e, slick, nextSlide) {
+		titleAnim(nextSlide);
+	});
+
+	// Title Animation JS
+	function titleAnim(ele){
+		$imageSlider.find('.slick-current').find('.slider-heading').addClass('show');
+		setTimeout(function(){
+			$imageSlider.find('.slick-current').find('.slider-heading').removeClass('show');
+		}, sliderTimer - beforeEnd);
+	}
+	titleAnim();
+});
+</script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+       autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:true
+        }
+    }
+})
+</script>
+
+<script>
+     new WOW().init();
+ </script>
+ 
+ <script>
+     $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 </body>
 </html>

@@ -49,6 +49,8 @@ foreach ($jobs as $job)
             </div>
         </div>
     </div>
+    
+    
     <div class="uk-modal" id="apply_confirmation_<?php echo $job->id; ?>">
         <div class="uk-modal-dialog">
         	<button class="uk-modal-close uk-close" type="button"></button>

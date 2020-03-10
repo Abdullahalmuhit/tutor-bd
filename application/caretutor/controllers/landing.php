@@ -208,6 +208,15 @@ class Landing extends CI_Controller {
         $this->load->view('faq', $data);
     }
 
+    public function team() {
+
+        $data = array(
+            'header' => $this->load->view('header', '', TRUE),
+            'footer' => $this->load->view('footer', '', TRUE)
+        );
+        $this->load->view('team', $data);
+    }
+
     public function contact() {
         //$this->check_is_logged_in();
         $data = array(

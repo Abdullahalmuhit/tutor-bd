@@ -1,6 +1,6 @@
 <?php if(!empty($locations)){ ?>
 		<legend style="text-align: left; border: none; margin-left: 1px;" id="area_list_name_div" class="job_board_label"> Locations </legend>
-		<div class="col-xs-12 col-sm-12 col-md-12 border_bottom" style="padding-left: 0px;padding-right: 0px; color: #212121;">
+		<div class="col-xs-12 col-sm-12 col-md-12 " style="padding-left: 0px;padding-right: 0px; color: #212121;">
 			<!--<?php
 				if (count($locations)>2)
 				{

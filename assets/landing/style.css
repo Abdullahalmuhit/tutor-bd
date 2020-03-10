@@ -70,7 +70,7 @@ body.modal-open {
 }
 
 .modal-open {
-    position: fixed;
+   /* position: fixed;*/
     /*overflow: auto;*/
 }
 .modal-backdrop{
@@ -231,13 +231,7 @@ img{
   position: relative;
 }
 .navbar-brand>img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    margin: auto;
-    bottom: 0;
+   
 }
 
 
@@ -969,7 +963,7 @@ div[data-dimension] {
 }
 
 
-.single_service .service_title{
+/*.single_service .service_title{
 	margin: 20px 0 0px;
 	padding-bottom: 10px;
 	position: relative;
@@ -978,7 +972,7 @@ div[data-dimension] {
     font-weight: 900 !important;
     line-height: 28px;
     font-size: 20px;
-}
+}*/
 
 
 .single_service > .service_title:after {
@@ -1928,7 +1922,7 @@ label.input-label-radio:after, label.input-label-checkbox:after{
     height: 12px;
     margin: -8px 0 0;
     opacity: 0;
-    background: #0675c1;
+    background-color: #62B235;
     -webkit-transform: translate3d(-40px, 0, 0) scale(0.5);
     transform: translate3d(-40px, 0, 0) scale(0.5);
     -webkit-transition: opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
@@ -2958,12 +2952,12 @@ textarea .form-control {
 	margin-right: 30px;
 }
 
-.single_service > p{
+/*.single_service > p{
 	text-align: center;
   color: #1f2c44;
   padding: 10px;
   font-weight: normal;
-}
+}*/
 
 .single_client > span{
 	color: #FFFFFF;
@@ -3358,7 +3352,7 @@ textarea .form-control {
 }
 p{
 	color: #1f2c44;
-	margin: 0 0 3px !important;
+	
 }
 
 .navbar-default-other {
