@@ -141,6 +141,7 @@ opacity: 0.4;
 														<div class="uk-width-1-1">
 															<label class="uk-text-hilight" for="tutor_profile_category">Category <span style="font-size: 12px; opacity: 0.6;">(you can not add more than five categories, so select categories based on your skills)</span></label>
 															<select id="tutor_profile_category" name="tutor_profile_category" multiple>
+                                                                
 																<option value="">Category</option>
 																		<?php if(!empty($category)):
 																// unset($category[0]);
@@ -226,49 +227,49 @@ opacity: 0.4;
 
 													
                                                         
-                                                        <div class="uk-width-medium-1-2">
+                                                    <div class="uk-width-medium-1-2">
 												        <div class="form-group field-signupform-locale required">
-                                                        <label for="">Your City</label>
-                                                        <select id="tutor_profile_city" class="form-control" name="tutor_profile_city" aria-required="true">
-                                                            <option>Select City</option>
-                                                            
-                                                            <?php
-																foreach ($city as $cit): ?>
-                                                            
-                                                            <option <?php echo (!empty($tution_info))?($tution_info[0]['city_id'] == $cit->id)?'selected="selected"':'':''; ?> value="<?php echo ($cit->city == 'Select City')?'1':$cit->id; ?>"><?php echo $cit->city; ?></option>
-                                                            <?php endforeach ?>
-                                                           
-                                                        </select>
-                                                    </div>
-														</div>
+                                                            <label for="">Your City</label>
+                                                            <select id="tutor_profile_city" class="form-control" name="tutor_profile_city" aria-required="true">
+                                                                <option>Select City</option>
+
+                                                                <?php
+                                                                    foreach ($city as $cit): ?>
+
+                                                                <option <?php echo (!empty($tution_info))?($tution_info[0]['city_id'] == $cit->id)?'selected="selected"':'':''; ?> value="<?php echo ($cit->city == 'Select City')?'1':$cit->id; ?>"><?php echo $cit->city; ?></option>
+                                                                <?php endforeach ?>
+
+                                                            </select>
+                                                      </div>
+												  </div>
 														
 
 														
 														
                                                         
                                                         
-                                                        	<div class="uk-width-medium-1-2 locatin_hide" id="your_location_show" <?php echo (!empty($tution_info))?($tution_info[0]['city_id'] == '3')?'style="display: none;"':'':''; ?>>
-															  <label for="">Your Location</label>
-                                                        <select id="tutor_profile_your_location" class="form-control" name="tutor_profile_your_location" aria-required="true">
-                                                            <option value="">Select Location</option>
-                                                            
-                                                            <?php if(!empty($cities_location)){ ?>
-																	<?php
-																		foreach ($cities_location as $loc)
-																		{
-																			$selected = '';
-																				if($loc->id == $tution_info[0]['your_location_id']){
-																					$selected = 'selected="selected"';
-																				}
-																			?>
-                                                            <option <?php echo $selected; ?> '<?php echo $loc->id; ?>'><?php echo $loc->location; ?></option>
-                                                            
-                                                            <?php
-																		}
-																	?>
-																<?php } ?>
-                                                           
-                                                        </select>
+                                                     <div class="uk-width-medium-1-2 locatin_hide" id="your_location_show" <?php    echo (!empty($tution_info))?($tution_info[0]['city_id'] ==  '3')?'style="display: none;"':'':''; ?>>
+                                                                      <label for="">Your Location</label>
+                                                                <select id="tutor_profile_your_location" class="form-control" name="tutor_profile_your_location" aria-required="true">
+                                                                    <option value="">Select Location</option>
+
+                                                                    <?php if(!empty($cities_location)){ ?>
+                                                                            <?php
+                                                                                foreach ($cities_location as $loc)
+                                                                                {
+                                                                                    $selected = '';
+                                                                                        if($loc->id == $tution_info[0]['your_location_id']){
+                                                                                            $selected = 'selected="selected"';
+                                                                                        }
+                                                                                    ?>
+                                                                    <option <?php echo $selected; ?> '<?php echo $loc->id; ?>'><?php echo $loc->location; ?></option>
+
+                                                                    <?php
+                                                                                }
+                                                                            ?>
+                                                                        <?php } ?>
+
+                                                                </select>
 														</div>                 
 													</div>
 													<div class="uk-grid locatin_hide" data-uk-grid-margin <?php echo (!empty($tution_info))?($tution_info[0]['city_id'] == '3')?'style="display: none;"':'':''; ?>>
@@ -554,6 +555,7 @@ opacity: 0.4;
 																	<input type="hidden" id="education_info_id_for_update" name="education_info_id_for_update" value="<?php echo $edu_info['id']; ?>" />
 																	<div class="uk-grid" data-uk-grid-margin>
 																		<div class="uk-width-medium-1-1">
+                                                                            
 																			<select id="level_of_education" name="edit_level_of_education" data-md-selectize>
 																				<option <?php echo ($edu_info['level_of_education']=="0")?"selected":""; ?> value="0">Level of education</option>
 																				<option <?php echo ($edu_info['level_of_education']=="Secondary")?"selected":""; ?> value="Secondary">Secondary</option>
@@ -623,15 +625,26 @@ opacity: 0.4;
 																				<label for="curriculum">Curriculum</label>
 																				<select id="curriculum" name="edit_curriculum" data-md-selectize>
 																					<!-- <option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="Curriculum"?"selected":""; ?> value="0">Curriculum</option> -->
+                                                                                    
+                                                                                    
+                                                                                    
 																					<option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="bangla_version"?"selected":""; ?> value="bangla_version">Bangla version</option>
 																					<option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="english_version"?"selected":""; ?> value="english_version">English version</option>
 																					<option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="Ed-excel"?"selected":""; ?> value="ed-excel">Ed-excel</option>
 																					<option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="Cambridge"?"selected":""; ?> value="cambridge">Cambridge</option>
 																					<option <?php echo ucfirst(str_replace("_"," ",$edu_info['curriculum']))=="Ib"?"selected":""; ?> value="ib">IB</option>
+                                                                                    
+                                                                                    
 																				</select>
 																			</div>
 																		</div>
 																	</div>
+                                                                
+                                                       
+                                                                
+                                                                
+                                                                
+                                                                
 																	<div class="uk-grid" data-uk-grid-margin>
 																		<div class="uk-width-large-1-2 uk-width-medium-1-1">
 																			<div class="md-input-wrapper md-input-filled">
@@ -752,9 +765,9 @@ opacity: 0.4;
 										<div class="uk-grid" data-uk-grid-margin>
 											<div class="uk-width-medium-1-1">
 												<label for="identity">Identity Card No</label>
-												<!-- <input class="md-input" type="text" id="user_edit_facebook_control" data-uk-tooltip="{pos:'bottom'}" title="Example: 19953012781000270 / BB 0617607" name="identity" value="<?php echo (!empty($personal_info))?$personal_info[0]['identity']:''; ?>" /> -->
+												<input class="md-input" type="text" id="user_edit_facebook_control" data-uk-tooltip="{pos:'bottom'}" title="Example: 19953012781000270 / BB 0617607" name="identity" value="<?php echo (!empty($personal_info))?$personal_info[0]['identity']:''; ?>" /> 
 
-												<div class="input-group md-input">
+											<!--	<div class="input-group md-input">
 													<div class="input-group-icon">
 														<select class="" style="width: 100px !important; border-radius: 0 !important" name="identity_type" id="identity_type" data-md-selectize>
 															<option <?php if (!empty($personal_info)): if ($personal_info[0]['identity_type'] == 'National ID'): echo 'selected'; endif; endif; ?> value="National ID">NID</option>
@@ -765,7 +778,7 @@ opacity: 0.4;
 													<div class="input-group-area">
 															<input class="md-input" style="border-radius: 0 !important" type="text" id="user_edit_facebook_control" data-uk-tooltip="{pos:'bottom'}" title="Example: 19953012781000270 / BB 0617607" name="identity" value="<?php echo (!empty($personal_info))?$personal_info[0]['identity']:''; ?>" />
 													</div>
-												</div>
+												</div> -->
 
 											</div>
 										</div>
@@ -775,20 +788,31 @@ opacity: 0.4;
 												<label for="user_edit_first_name_control">Date of Birth</label>
 												<input class="md-input" type="date" data-uk-tooltip="{pos:'bottom'}" title="Example: 2019-01-01" id="user_edit_date_of_birth_control" name="date_of_birth" value="<?php echo (!empty($personal_info))?$personal_info[0]['date_of_birth']:''; ?>" />
 											</div>
+                                            
 											<div class="uk-width-medium-1-2">
-												<label for="user_edit_position_control">Religion</label>
+												 <label for="">Religion</label>
 												<!-- <input class="md-input" type="text" data-uk-tooltip="{pos:'bottom'}" title="Example: Islam" id="user_edit_religion_control" name="religion" value="<?php echo (!empty($personal_info))?$personal_info[0]['religion']:''; ?>" /> -->
-												<select class="" style="border-radius: 0 !important" name="religion" id="user_edit_religion_control" data-md-selectize>
+
+                                                    <select id="signupform-locale" class="form-control" name="religion" aria-required="true">
 													<option <?php if (!empty($personal_info)): if ($personal_info[0]['religion'] == 'islam'): echo 'selected'; endif; endif; ?> value="islam">Islam</option>
 													<option <?php if (!empty($personal_info)): if ($personal_info[0]['religion'] == 'hinduism'): echo 'selected'; endif; endif; ?> value="hinduism">Hinduism</option>
 													<option <?php if (!empty($personal_info)): if ($personal_info[0]['religion'] == 'christianity'): echo 'selected'; endif; endif; ?> value="christianity">Christianity</option>
 													<option <?php if (!empty($personal_info)): if ($personal_info[0]['religion'] == 'buddhism'): echo 'selected'; endif; endif; ?> value="buddhism">Buddhism</option>
 												</select>
 											</div>
+                                            
+                                            
+                                  
+                                            
+                                            
+                                            
+                                            
+                                            
 											<div class="uk-width-medium-1-2">
 												<label for="user_edit_position_control">Nationality</label>
 												<!-- <input class="md-input" type="text" data-uk-tooltip="{pos:'bottom'}" title="Example: Bangladeshi" id="user_edit_nationality_control" name="nationality" value="<?php echo (!empty($personal_info))?$personal_info[0]['nationality']:''; ?>" /> -->
-												<select class="" style="border-radius: 0 !important" name="nationality" id="user_edit_nationality_control" data-md-selectize>
+											
+                                                      <select id="signupform-locale" class="form-control" name="nationality" aria-required="true">
 													<option value="">Select One</option>
 													<?php foreach ($country as $v): ?>
 													<option value="<?php echo $v->id ?>" <?php if (!empty($personal_info)): if ($personal_info[0]['nationality'] == $v->id): echo 'selected'; endif; endif; ?>><?php echo $v->country ?></option>
@@ -1077,7 +1101,8 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 					<div class="uk-width-medium-1-1">
 
 				<label class="uk-text-muted uk-text-small"><b>Add Masters, Honors, HSC/A Level, SSC/O Level <span style="color: #e53935;">(Required)*</span></b></label>
-						<select id="level_of_education" name="level_of_education" data-md-selectize>
+						 <!--  <select id="level_of_education" name="level_of_education" data-md-selectize>  -->
+                      <select id="signupform-locale" class="form-control" name="level_of_education" aria-required="true">
 							<option value="0">Level of education</option>
 							<option value="Secondary">Secondary</option>
 							<option value="Higher Secondary">Higher Secondary</option>
@@ -1143,7 +1168,8 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 					<div class="uk-width-medium-1-1">
 						<div class="md-input-wrapper">
 						<label for="curriculum">Curriculum</label>
-						<select id="curriculum" name="curriculum" placehlder="Curriculum" data-md-selectize >
+						<!-- <select id="curriculum" name="curriculum" placehlder="Curriculum" data-md-selectize > -->
+                        <select id="signupform-locale" class="form-control" name="curriculum" aria-required="true">
 							<!-- <option value="0">Curriculum</option> -->
 							<option value="bangla_version">Bangla version</option>
 							<option value="english_version">English version</option>
@@ -1159,14 +1185,14 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 						<div class="uk-input-group" style="    display: block;">
 							<span class="uk-input-group-addon" style="position: absolute;top: 25px; right: 0px;"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
 							<!-- <label for="uk_dp_1">From</label> -->
-							<input class="md-input md-input-width-medium uk-width-5-10" name="from_date" type="text" id="uk_dp_1" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="From">
+							<input class="md-input md-input-width-medium uk-width-5-10" name="from_date" type="text" id="datepicker" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="From">
 						</div>
 					</div>
 					<div class="uk-width-large-1-2 uk-width-medium-1-1">
 						<div class="uk-input-group" style="    display: block;">
 							<span class="uk-input-group-addon" style="position: absolute;top: 25px; right: 0px;"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
 							<!-- <label for="uk_dp_1">Until</label> -->
-							<input class="md-input" name="until_date" type="text" id="uk_dp_2" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="Until">
+							<input class="md-input" name="until_date" type="text" id="datepickerUntil" data-uk-datepicker="{format:'DD.MM.YYYY'}" placeholder="Until">
 						</div>
 					</div>
 				</div>
@@ -1188,4 +1214,61 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 	</div>
 </div>
 
-</script>
+
+
+
+   <script>
+        var SITE = SITE || {};
+
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                var tmppath = URL.createObjectURL(event.target.files[0]);
+
+                reader.onload = function(e) {
+                    $('#img-uploaded').attr('src', e.target.result);
+                    $('input.img-path').val(tmppath);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $(".uploader").change(function() {
+            readURL(this);
+        });
+    </script>
+
+    <script>
+        /*---------------------------------------------------------*/
+        // Function that executes on click of first next button.
+        function next_step1() {
+            document.getElementById("first").style.display = "none";
+            document.getElementById("second").style.display = "block";
+            document.getElementById("active2").style.color = "red";
+        }
+        // Function that executes on click of first previous button.
+        function prev_step1() {
+            document.getElementById("first").style.display = "block";
+            document.getElementById("second").style.display = "none";
+            document.getElementById("active1").style.color = "red";
+            document.getElementById("active2").style.color = "gray";
+        }
+
+    </script>
+
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+            $("#datepickerUntil").datepicker();
+            $("#datepickerBirth").datepicker();
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.sel').chosen();
+        })
+
+    </script>

@@ -269,8 +269,8 @@
 
 <script src="<?php echo base_url(); ?>assets/landing/js/wow.min.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/landing/js/bootstrap.min.js"></script>
-<!-- <script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script> -->
+<!-- <script src="<?php echo base_url(); ?>assets/landing/js/bootstrap.min.js"></script> -->
+<script src="<?php echo base_url(); ?>assets/landing/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
 
 <script src="<?php echo base_url(); ?>assets/landing/js/jquery.superslides.min.js" type="text/javascript"></script>

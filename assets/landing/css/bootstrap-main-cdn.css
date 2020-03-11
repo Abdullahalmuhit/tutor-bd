@@ -2143,7 +2143,8 @@ pre code {
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding: 1rem .75rem;
+    margin-top: 15px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
