@@ -9349,7 +9349,7 @@ center {
     }
     .sidebar_main_open #page_content,
     .sidebar_main_open #top_bar {
-        margin-left: 264px;
+        margin-left: 0px;
     }
     .sidebar_main_open:not(.steps) .sSwitch_left .sSwitchIcon:before,
     .sidebar_main_open:not(.steps) .sSwitch_left .sSwitchIcon:after {

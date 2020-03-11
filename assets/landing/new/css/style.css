@@ -499,6 +499,8 @@ h2.rt-effect {
     height: 75px;
 }
 
+/**1st **/
+
 /* Transition Delay */
 .swiper-slide-active .delay-1 {
     -webkit-transition-delay: .6s;
@@ -992,6 +994,8 @@ a:hover {
 .banner-badge span {
     color: #fff;
 }
+
+/**2nd**/
 
 .hire-tutor-btn {
     color: #fff;
@@ -1996,6 +2000,8 @@ figure.effect-ravi:hover p i:empty {
     transition: all 0.3s ease-in;
 }
 
+/**3rd***/
+
 .footer-contact-icon i {
     color: #fff;
     padding-top: 7px;
@@ -2282,6 +2288,7 @@ input.common_radio[type="radio"]:checked + label.label_text {
     overflow: hidden;
 }
 
+/****/
 
 .signin_area_left_holder .input_holder .input_cap {
     float: left;
@@ -2434,14 +2441,9 @@ input[type="file"] {
 
 
 
-fieldset {
-    display: none;
-}
 
-#first {
-    display: block;
 
-}
+
 
 .col-text-center {
     float: none !important;
@@ -2469,15 +2471,6 @@ fieldset {
     padding: 0px;
 }
 
-#next_btn1 {
-    float: right;
-    background-color: #169eb7;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 6px 20px;
-    cursor: pointer;
-}
 
 
 
@@ -2543,6 +2536,9 @@ fieldset {
     opacity: .5;
 }
 
+/**remove***/
+
+
 .signup-subject-header {
     font-size: 16px;
     margin-bottom: 12px;
@@ -2562,33 +2558,8 @@ fieldset {
     height: 130px !important;
 }
 
-#next_btn2 {
-    float: right;
-    background-color: #169eb7;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 6px 20px;
-    cursor: pointer;
-}
 
-#pre_btn1 {
-    background-color: #008000;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 6px 20px;
-    cursor: pointer;
-}
 
-#pre_btn2 {
-    background-color: #008000;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 6px 20px;
-    cursor: pointer;
-}
 
 .signup-submitbtn {
     float: right;
@@ -2993,6 +2964,8 @@ fieldset {
     align-items: center;
 }
 
+/**4th**/
+
 .pagination_holder ul li {
     color: #a8a8a8;
     line-height: 4.5rem;
@@ -3061,7 +3034,7 @@ fieldset {
 .pagination_holder ul li:last-child a:hover {
     background: none;
 }
-
+/**last**/
 .filter-header {
     background: #ecf3ef;
 }

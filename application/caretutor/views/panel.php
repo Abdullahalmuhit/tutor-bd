@@ -18,6 +18,19 @@ define('safe_access', true);
         <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/landing/tutor_template.css" />
         <title>caretutors.com</title>
+        
+          <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+  
+
+
+
+
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/dashboard.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style2.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style.css">
+        
 
         <?php
         if (isset($css)) {
@@ -29,7 +42,7 @@ define('safe_access', true);
         ?>
 
     </head>
-    <body <?php if (isset($body_class)) echo ' ' . $body_class; ?>">
+    <body class="sidebar_main_open<?php if (isset($body_class)) echo ' ' . $body_class; ?>">
 
         <?php $this->load->view('partials/header_main'); ?>
 

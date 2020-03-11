@@ -1,32 +1,6 @@
 
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/css/bootstrap-main-cdn.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <!--Google fonts--->
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Student/Parent Dashboard</title>
-
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/jquery.fancybox.min.css">
-
-<!--Swiper slider CSS-->
-<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/swiper.min.css">
-    <!--Owl Carosuel css--->
   
-
- <link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.carousel.min.css">
-<!--Main CSS-->
-<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/dashboard.css">
-<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style2.css">
-<link rel="stylesheet" href="<?php echo base_url();?>assets/landing/new/css/style.css">
 
 
 

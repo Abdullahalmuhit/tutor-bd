@@ -15,7 +15,7 @@
             </div>
             <!-- main sidebar switch -->
             <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
-                <span class="sSwitchIcon"></span>
+                
             </a>
             <!-- secondary sidebar switch -->
             <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
