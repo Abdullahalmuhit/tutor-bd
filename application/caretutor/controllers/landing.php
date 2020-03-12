@@ -217,6 +217,15 @@ class Landing extends CI_Controller {
         $this->load->view('team', $data);
     }
 
+    public function tutor_list() {
+
+        $data = array(
+            'header' => $this->load->view('header', '', TRUE),
+            'footer' => $this->load->view('footer', '', TRUE)
+        );
+        $this->load->view('list_tutor', $data);
+    }
+
     public function contact() {
         //$this->check_is_logged_in();
         $data = array(

@@ -484,13 +484,7 @@
   $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
-    <!-- Custom js-->
-<script src="<?php echo base_url(); ?>assets/js/frontend.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/close.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/apply_job.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/job_filter_landing.js"></script>
-<script src="<?php echo base_url(); ?>assets/landing/js/custom.js"></script>
-<script src="<?php echo base_url(); ?>assets/landing/js/slick_slider.js"></script>
+
 
 </body>
 </html>

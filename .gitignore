@@ -5,5 +5,5 @@ zJunk
 boapi
 back-office
 node_modules
-application/caretutor/config/database.php
-
+/application/caretutor/config/database.php
+/.gitignore
