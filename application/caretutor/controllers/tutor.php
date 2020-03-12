@@ -86,6 +86,15 @@ class Tutor extends CI_Controller {
         $this->load->view('tutor_dashboard', $data);
     }
 
+    public function tutor_list() {
+
+        $data = array(
+            'header' => $this->load->view('header', '', TRUE),
+            'footer' => $this->load->view('footer', '', TRUE)
+        );
+        $this->load->view('list_tutor', $data);
+    }
+
     public function dashboard_init() {
         $this->load->model('user_model');
 

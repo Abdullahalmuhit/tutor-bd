@@ -1075,7 +1075,7 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 		</ol>
 
 		<h3 class="uk-modal-title">Do & Don't Examples (Male)</h3>
-		<img src="<?php echo base_url(); ?>assets/img/male.png" />
+		<img src="<?php echo base_url(); ?>assets/img/2.jpg" />
 		<h3 class="uk-modal-title">Do & Don't Examples (Female)</h3>
 		<img src="<?php echo base_url(); ?>assets/img/female.png" />
 	</div>

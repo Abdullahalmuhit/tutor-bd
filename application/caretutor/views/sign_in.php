@@ -51,13 +51,13 @@
                     <div class="login-content-right">
                         <h2 class="login-header-text">New Member Sign up</h2>
                         <div class="input_holder login-right-btn">
-                            <a href="student-parent-signup.html"> <button type="button" class="btn btn-first"><img src="images/tutor.png" class="img-fluid" alt=""> I Need A Tutor</button></a>
+                            <a href="<?php echo base_url('landing/tutor_list'); ?>"> <button type="button" class="btn btn-first"><img src="images/tutor.png" class="img-fluid" alt="">Tutor List</button></a>
                         </div>
                         <div class="input_holder login-right-btn">
-                            <a href="tutor-signup.html"> <button type="button" class="btn btn-second"><img src="images/tutor2.png" class="img-fluid" alt="">Sign Up As a Tutor</button></a>
+                            <a href="<?php echo base_url('landing/become_a_tutor'); ?>"> <button type="button" class="btn btn-second"><img src="images/tutor2.png" class="img-fluid" alt="">Sign Up As a Tutor</button></a>
                         </div>
                         <div class="input_holder login-right-btn">
-                            <a href="student-parent-signup.html"> <button type="button" class="btn btn-third"><img src="images/tutor2.png" class="img-fluid" alt="">Sign Up As a Student</button></a>
+                            <a href="<?php echo base_url('landing/hire_a_tutor'); ?>"> <button type="button" class="btn btn-third"><img src="images/tutor2.png" class="img-fluid" alt="">Sign Up As a Student</button></a>
                         </div>
                         <!--<div class="input_holder login-right-btn">
                    <button type="button" class="btn btn-fourth"><img src="images/faculty.png" alt="" class="img-fluid">i Need A teacher</button>
