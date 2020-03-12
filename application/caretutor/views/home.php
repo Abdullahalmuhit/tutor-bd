@@ -50,7 +50,7 @@
                         <li class="nav-item" onmouseover="tutorialmenuon()" onmouseout="tutorialmenuoff()"><a href="#" class="nav-link" data-hover="Tutorial">Tutorial</a></li>
 
                         <li class="nav-item" onmouseover="tutormenuon()" onmouseout="tutormenuoff()">
-                            <a href="#" class="nav-link" data-hover="Tutors Hub">Tutors Hub</a>
+                            <a href="<?php echo base_url('landing/tutor_list'); ?>" class="nav-link" data-hover="Tutors Hub">Tutors Hub</a>
                         </li>
 
                         <li class="nav-item"><a href="<?php echo base_url('landing/signup'); ?>" class="nav-link" data-hover="Registration">Registration</a></li>

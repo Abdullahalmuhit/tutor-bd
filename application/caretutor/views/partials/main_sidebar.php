@@ -62,7 +62,7 @@
                     echo ' class="act_section"';
                 };
                 ?>>
-                <a  href="#mailbox_new_message" data-uk-modal="{center:true}"><i class="fa fa-hourglass-start" ></i> Post Jobs</a>
+                <a  href="#mailbox_new_message" data-uk-modal="{center:true}"><span class="uk-icon-justify uk-icon-github"></span> Post Jobs</a>
                 </li>
 
                 <!-- <li<?php
