@@ -26,7 +26,7 @@
                 <div class="form-inner">
                      <form id="contact_us" data-link="landing/contact_us" class="form-horizontal margin_top" role="form">
 
-                        <div class="row faq-form">
+                        <div class="row faq-form contact-page-from">
                             <div class="form-group col-md-6">
                                 <label for="">Name</label>
                                 <input type="text" class="form-control" name="name" id="name" placeholder="">
