@@ -244,6 +244,15 @@ class Landing extends CI_Controller {
         $this->load->view('career_details', $data);
     }
 
+    public function gallery() {
+
+        $data = array(
+            'header' => $this->load->view('header', '', TRUE),
+            'footer' => $this->load->view('footer', '', TRUE)
+        );
+        $this->load->view('gallery', $data);
+    }
+
     public function contact() {
         //$this->check_is_logged_in();
         $data = array(

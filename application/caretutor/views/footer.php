@@ -84,6 +84,9 @@
                                 <br>
                                 <a href="<?php echo base_url('landing/career'); ?>"> <i class="fas fa-angle-right"></i> Careers</a>
                                 <br>
+                               
+                                <a href="<?php echo base_url('landing/gallery'); ?>"> <i class="fas fa-angle-right"></i> Gallery</a>
+                                <br>
                                 <a href="<?php echo base_url('landing/faq'); ?>"> <i class="fas fa-angle-right"></i> FAQ</a>
                                 <br>
                                 <a href="<?php echo base_url('landing/team'); ?>"> <i class="fas fa-angle-right"></i> Our Team</a>

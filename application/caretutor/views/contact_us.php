@@ -9,7 +9,7 @@
                     <div class="faq-title-wrapper contact-tittle-warper">
                         <h2>Contact</h2>
                         <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="<?php echo base_url(); ?>">Home</a></li>
                             <li class="active"><span><i class="fas fa-chevron-right"></i></span>Contact</li>
                         </ol>
                     </div>
