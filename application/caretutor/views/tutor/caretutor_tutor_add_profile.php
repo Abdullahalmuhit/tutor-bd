@@ -80,7 +80,7 @@ opacity: 0.4;
 </style>
 
 
-<div id="page_content">
+<div id="page_content" >
 <div id="page_content_inner">
 	<form action="" class="uk-form-stacked" id="user_edit_form">
 		<div class="uk-grid" data-uk-grid-margin>

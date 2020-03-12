@@ -8,12 +8,16 @@
 
 <body style="background-color: #edeff0;">
 
-    <div style="height: 100%;overflow: scroll;" class="wrapper d-flex align-items-stretch">                                       
+    <div style="height: 100%;overflow: scroll;" class="wrapper d-flex align-items-stretch"> 
+                                          
         <nav id="sidebar">
                                        
        
                                     
             <div class="p-4 tutor-dashboard-menu">
+            <span class="btn-file">
+                        <a class="fileinput-new" href="#upload_new_profile_pic" data-uk-modal="{center:true}"><i class="material-icons">&#xE2C6;</i>Upload Profile</a>
+                    </span>
                 <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(<?php echo base_url();?>assets/img/2.jpg);"></a>
                 <div class="sidebar-profile">
                     <p class="p-text"><a href="javascript:void(0)">
@@ -28,10 +32,9 @@
                 echo 'Hello ' . explode(" ", $this->session->userdata('full_name'))[0] . ',<br/> ' . ucfirst($this->session->userdata('user_type')) . ' ID ' . $this->session->userdata('id') . '';
                 ?>
             </a></p>
+            
              <div class="user_avatar_controls">
-                    <span class="btn-file">
-                        <a class="fileinput-new" href="#upload_new_profile_pic" data-uk-modal="{center:true}"><i class="material-icons">&#xE2C6;</i>Upload Profile</a>
-                    </span>
+                    
              </div>
           
                 </div>
