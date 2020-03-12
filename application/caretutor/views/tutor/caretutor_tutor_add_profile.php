@@ -1,6 +1,8 @@
 <?php defined('safe_access') or die('Restricted access!'); ?>
+
 <link rel="stylesheet" href="<?php echo base_url('assets/css/croppie.css') ?>">
 <style>
+
 ul#user_edit_tabs.uk-tab li.uk-tab-responsive.uk-active.uk-open div.uk-dropdown.uk-dropdown-small.uk-dropdown-active.uk-dropdown-shown{min-width: 240px !important;}
 @media(max-width:767px ){
 	#user_edit_tabs{
@@ -76,6 +78,7 @@ color:    #000;
 opacity: 0.4;
 }
 </style>
+
 
 <div id="page_content">
 <div id="page_content_inner">
@@ -1214,61 +1217,17 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 	</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--ref for help video-->
 
 
 
-   <script>
-        var SITE = SITE || {};
 
 
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                var tmppath = URL.createObjectURL(event.target.files[0]);
 
-                reader.onload = function(e) {
-                    $('#img-uploaded').attr('src', e.target.result);
-                    $('input.img-path').val(tmppath);
-                }
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
 
-        $(".uploader").change(function() {
-            readURL(this);
-        });
-    </script>
 
-    <script>
-        /*---------------------------------------------------------*/
-        // Function that executes on click of first next button.
-        function next_step1() {
-            document.getElementById("first").style.display = "none";
-            document.getElementById("second").style.display = "block";
-            document.getElementById("active2").style.color = "red";
-        }
-        // Function that executes on click of first previous button.
-        function prev_step1() {
-            document.getElementById("first").style.display = "block";
-            document.getElementById("second").style.display = "none";
-            document.getElementById("active1").style.color = "red";
-            document.getElementById("active2").style.color = "gray";
-        }
 
-    </script>
 
-    <script>
-        $(function() {
-            $("#datepicker").datepicker();
-            $("#datepickerUntil").datepicker();
-            $("#datepickerBirth").datepicker();
-        });
 
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.sel').chosen();
-        })
-
-    </script>
