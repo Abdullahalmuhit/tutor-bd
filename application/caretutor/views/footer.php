@@ -82,7 +82,7 @@
                                 <br>
                                 <a href="<?php echo base_url('landing/contact'); ?>"> <i class="fas fa-angle-right"></i> Contact</a>
                                 <br>
-                                <a href="#"> <i class="fas fa-angle-right"></i> Careers</a>
+                                <a href="<?php echo base_url('landing/career'); ?>"> <i class="fas fa-angle-right"></i> Careers</a>
                                 <br>
                                 <a href="<?php echo base_url('landing/faq'); ?>"> <i class="fas fa-angle-right"></i> FAQ</a>
                                 <br>
