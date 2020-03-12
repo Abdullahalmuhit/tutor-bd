@@ -1677,9 +1677,9 @@ only screen and (min-resolution: 1.5dppx) {
 }
 
 .tutor-home-header {
-    background: #009688;
-    padding: 8px 0px 5px 0px;
-    background: #00923f;
+       padding: 25px 0px 10px 0px;
+    background: #FFF;
+    margin-bottom: 20px;
 }
 
 .home-header-item {
@@ -1700,10 +1700,9 @@ only screen and (min-resolution: 1.5dppx) {
 }
 
 .home-header-item .form-control {
-    background: #009688;
-    border: 1px dashed #73b7ae;
+          border: 1px dashed #62B235;
     color: #343a40;
-    background: #00923f;
+    background: #fff;
 }
 
 .tutor-test-content {
@@ -1933,4 +1932,8 @@ only screen and (min-resolution: 1.5dppx) {
 
 .tutor-edit-warp label {
     font-size: 14px!important;
+}
+.tutor-panel-job-main{
+    padding-left: 0px!important;
+    padding-left: 0px!important;
 }

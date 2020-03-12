@@ -480,9 +480,11 @@ class Tutor_req_model extends CI_Model {
       } */
 
     public function get_user_jobs_list() {
+        
         //Select table name
         $table_name = $this->db->dbprefix('tutor_requirements tr');
-        $this->db->select("tr.*,c.city as city,tr.updated_at as upd, l.location as location, tr.institute_name as institute, tc.category as category, tc2.category as sub_cat,GROUP_CONCAT(s.category) as subs", FALSE);
+        $this->db->select("tr.*,c.city as city,tr.updated_at as upd, l.location as location, tr.institute_name as institute, tc.category as category, tc2.category as sub_cat ,GROUP_CONCAT(s.category) as subs", FALSE);
+        //
         $this->db->from($table_name);
         $this->db->join('ct_city c', 'tr.city_id = c.id');
         $this->db->join('ct_location l', 'tr.location_id = l.id');
@@ -490,9 +492,10 @@ class Tutor_req_model extends CI_Model {
         $this->db->join('ct_tution_category tc2', 'tr.tution_sub_cat_id = tc2.id');
         $this->db->join('ct_tution_category s', 'FIND_IN_SET(s.id , tr.subjects)', 'left');
         $this->db->join('ct_user u', 'tr.user_id = u.id');
-        $this->db->where('tr.online', '1');
+        // $this->db->where('tr.online', '1');
         // $this->db->where('tr.live_to >= ', date('Y-m-d'));
         $this->db->where('tr.user_id',$this->session->userdata('id'));
+        
 
         if ($this->input->post('txttjstext')) {
             $this->db->having("lower(Concat(location, '', category, '', sub_cat)) like lower('%" . $this->input->post('txttjstext') . "%')", FALSE);

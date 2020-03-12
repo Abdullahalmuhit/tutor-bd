@@ -4605,10 +4605,19 @@ z-index:9999;
 .tutoring-modal .modal-dialog{
         max-width: 700px!important;
 }
+.panel-job-location .selectize-control{
+        
+}
+.panel-job-location .selectize-input{
+        padding: 3px 8px;
+        background: transparent;
+        border: 1px dashed #73b7ae!important;
+        top: 12px;
+}
 
-
-
-
+.panel-job-location .selectize-control.multi .selectize-input{
+    min-height: unset;
+}
 
 
 

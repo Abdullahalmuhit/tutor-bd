@@ -8,123 +8,263 @@
 </style>
 <div id="page_content">
     <div id="page_content_inner">
-    <?php if ($this->session->userdata('gretings')) { ?>
+        <?php if ($this->session->userdata('gretings')) { ?>
             <div class="uk-alert uk-alert-success uk-text-bold uk-text-center"> You have successfully posted your tutor requirements. Best matched tutor profile coming soon. Thank you for choosing our platform. </div>
         <?php } ?>
-<div  class="wrapper d-flex align-items-stretch">
-        <!-- Page Content  -->
-        <div id="content" class="">
-            <div class="container">
-                <!-- <?php if ($this->session->userdata('gretings')) { ?>
-            <div class="uk-alert uk-alert-success uk-text-bold uk-text-center"> You have successfully posted your tutor requirements. Best matched tutor profile coming soon. Thank you for choosing our platform. </div>
-        <?php } ?> -->
-                <div class="tutor-profile-header text-center">
-                    <h4>Tutor Profile</h4>
-                </div>
-                <div class="tutor-profile">
-                    <div class="row">
-                        
-                        <div class="item-b col-md-4">
-                            <div style="margin-right: 15px;" class="tutor-profile-content">
-                                <div class="tutor-profile-content-header text-center">
-                                    <img src="<?php echo base_url();?>assets/img/h3.png" class="img-fluid" alt="">
-                                    <p>Rizvi Ahmed</p>
-                                    <button type="button" class="btn">View profile</button>
-                                </div>
 
-                            </div>
-                            <div class="tutor-profile-body">
-                                <div class="p-institute">
-                                    <h5>Current Institute</h5>
-                                    <span>Dhaka University</span>
-                                </div>
-                                <div class="p-experience">
-                                    <h5>Experience</h5>
-                                    <span>5 Years</span>
-                                </div>
-                                <div class="p-requirment-match">
-                                    <h5>Requirment Match</h5>
-                                    <div class="progress requirment-progress">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-                                    </div>
-                                </div>
+        <div class="uk-grid uk-grid-medium" data-uk-grid-margin>
+            <div class="uk-width-xLarge-2-10 uk-width-large-3-10">
+                <div class="md-card">
+                    <div class="md-card-toolbar toolbar_blue">
+                        <h3 class="md-card-toolbar-heading-text">
+                            Job Details
+                        </h3>
+                    </div>
+                    <div class="md-card-content">
+                        <div class="uk-grid uk-grid-divider uk-grid-medium">
+
+                            <div class="uk-width-large-1-1 uk-text-center uk-text-muted">
+                                <ul style="display: none;" data-uk-switcher="{connect:'#my-id, #my-id-two', animation: 'slide-horizontal'}">
+                                    <?php
+                                    $i = 0;
+                                    $j = count($jobs);
+                                    for ($i; $i <= $j; $i++) {
+                                        ?>
+                                        <li><a href=""><?php echo $i; ?></a></li>
+                                    <?php } ?>
+                                </ul>
+                                <ul id="my-id" class="uk-switcher">
+                                    <?php
+                                    $i = 0;
+                                    $j = count($jobs);
+                                    foreach ($jobs as $job) {
+                                        $k = $i;
+                                        ?>
+                                        <li>
+
+                                            <div>
+                                                <?php
+                                                echo "<p style='margin: 0px 0 5px 0 !important;opacity:0.7;'>Job ID " . $job->id . "</p>";
+                                                echo "<p style='margin: 5px 0 5px 0 !important; color: #1f2c44; font-weight: bold; font-size: 20px;'>Need a tutor for " . $job->sub_cat . " </p>";
+
+                                                 echo "<p style='margin: 5px 0 5px 0 !important; opacity: 0.7;'>Posted On &nbsp; " . $job->upd . " </p>";
+
+                                                echo '<span><a href="' . base_url('parents/view_job/' . $job->id) . '">
+		                                	                  	<span class="uk-badge uk-badge-success uk-badge-square-edge" style="padding: 10px 40px !important; font-size: 13px !important; margin-right: 5px; margin-bottom:15px;">
+		                                	                    	View
+		                                	                    </span>
+		                                	                  </a>
+		                                	                  ';
+                                                ?>
+
+                                                <?php
+                                                if ($job->status == 'post') {
+                                                    echo '<a href="' . base_url('parents/job_edit/' . $job->id) . '">
+		                                	                  	<span class="uk-badge uk-badge-success uk-badge-square-edge" style="padding: 10px 40px !important; font-size: 13px !important; margin-left: 5px; margin-bottom:15px;">
+		                                	                    	&nbsp;Edit&nbsp;
+		                                	                    </span>
+		                                	                  </a></span>';
+                                                }
+                                               echo '<br><br>';
+                                                ?>
+
+                                                <?php
+                                                if ($job->status == 'post') {
+                                                    $status = '<span class="uk-badge uk-badge-muted uk-badge-square-edge" style="border-radius: 30px;height: 10px;width: 2px;"><p style="opacity: 0; margin-bottom: 0px !important;">0</p></span>&nbsp;Reviewing';
+                                                } elseif ($job->status == 'complete') {
+                                                    $status = '<span class="uk-badge uk-badge-danger uk-badge-square-edge" style="border-radius: 30px;height: 10px;width: 2px;"><p style="opacity: 0; margin-bottom: 0px !important;">0</p></span>&nbsp; Completed';
+                                                } else {
+                                                    $status = '<span class="uk-badge uk-badge-success uk-badge-square-edge" style="border-radius: 30px;height: 10px;width: 2px;"><p style="opacity: 0; margin-bottom: 0px !important;">0</p></span>&nbsp; On board';
+                                                }
+                                                echo $status;
+                                                echo '<br><br>';
+                                                ?>
+
+                                                  <div class="uk-float-left" style="margin-left: 50px;"><i style="cursor: pointer;" class="uk-icon-chevron-left" <?php echo ($i == 0) ? '' : 'data-uk-switcher-item="' . ($k - 1) . '"'; ?>></i></div>
+                                            <div class="uk-float-right" style="margin-right: 50px"><i style="cursor: pointer;" class="uk-icon-chevron-right" <?php echo ($i == ($j - 1)) ? '' : 'data-uk-switcher-item="' . ($k + 1) . '"'; ?>></i></div>
+
+                                            <?php  echo  ($i + 1) . "/" . $j ; echo '<br>';?>
+
+                                                <hr class="uk-grid-divider uk-hidden-large">
+                                            </div>
+                                        </li>
+                                        <?php $i++;
+                                    }
+                                    ?>
+                                </ul>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- Till here -->
                 </div>
+                <a class="md-btn md-btn-success uk-margin-medium-top uk-margin-medium-bottom uk-float-right uk-width-1-1" href="#mailbox_new_message" data-uk-modal="{center:true}">Post Another Tuition Jobs</a>
 
-
+               <!--  <a class="md-btn md-btn-default uk-margin-medium-top uk-margin-medium-bottom uk-float-right uk-width-1-1" href="javascript:void(0)">Contact us <i class="uk-icon-mobile"></i> 01756 441122</a> -->
             </div>
-            
 
-            <div class="container">
-                <div class="tutor-profile-header text-center">
-                    <h4>Job Details</h4>
-                </div>
-                <div class="job-details">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-
-                                <div class="item col-md-4">
-                                    <div class="job-details-content text-center">
-                                        <span>Job ID 197654</span>
-                                        <h5>Need a tutor for Class 2</h5>
-                                        <span class="date-text">Posted on Feb 18, 2020</span>
-                                    </div>
-                                    <div class="job-details-btn text-center">
-                                        <button style="margin-right: 10px" type="button" class="btn"><a href="parent-job-edit.html">Edit</a></button>
-                                        <button style="margin-left: 10px" type="button" class="btn "><a href="parent-job-view.html">View</a></button>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="job-details-content text-center">
-                                        <span>Job ID 197654</span>
-                                        <h5>Need a tutor for Class 4</h5>
-                                        <span class="date-text">Posted on Feb 18, 2020</span>
-                                    </div>
-                                    <div class="job-details-btn text-center">
-                                        <button style="margin-right: 10px" type="button" class="btn"><a href="parent-job-edit.html">Edit</a></button>
-                                        <button style="margin-left: 10px" type="button" class="btn "><a href="parent-job-view.html">View</a></button>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="job-details-content text-center">
-                                        <span>Job ID 197654</span>
-                                        <h5>Need a tutor for Class 3</h5>
-                                        <span class="date-text">Posted on Feb 18, 2020</span>
-                                    </div>
-                                    <div class="job-details-btn text-center">
-                                        <button style="margin-right: 10px" type="button" class="btn"><a href="parent-job-edit.html">Edit</a></button>
-                                        <button style="margin-left: 10px" type="button" class="btn "><a href="parent-job-view.html">View</a></button>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
+            <div class="uk-width-xLarge-8-10  uk-width-large-7-10">
+                <div class="md-card">
+                    <div class="md-card-toolbar toolbar_blue">
+                        <h3 class="md-card-toolbar-heading-text">
+                            Tutor's Profile
+                        </h3>
+                    </div>
+                    <div class="md-card-content" id="tutor_cv_list">
+                        <div id="select_tutor_message">
 
                         </div>
+
+                        <ul id="my-id-two" class="uk-switcher uk-width-1-1">
+                            <?php
+                            $i = 1;
+                            $j = count($jobs);
+                            foreach ($jobs as $job) {
+                                    $k = $i;
+                                    $cv_lists = $cvs[$job->id];
+                                    $selected_tutor = $selected[$job->id];
+                                    ?>
+                                    <li class="uk-width-1-1">
+                                        <div class="uk-grid uk-grid-medium uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin data-uk-grid-match="{target:'.md-card-content'}">
+                                            <?php
+                                            if (!empty($cv_lists)) {
+                                                $l = 0;
+                                                foreach ($cv_lists as $cv_list) {
+                                                    $selected_header = 'head_blue';
+                                                    $selected_text = '';
+                                                    if ($cv_list->job_tutor_status == 'Selected') {
+                                                        $selected_text = '<a class="md-btn md-btn-success uk-float-right uk-width-1-1" >
+                                                                    Selected
+                                                                </a>';
+                                                        $selected_header = 'head_blue';
+                                                    } elseif ($cv_list->job_tutor_status == 'Appointed') {
+                                                        $selected_header = 'head_blue';
+                                                        $selected_text = '<a class="md-btn md-btn-success uk-float-right uk-width-1-1" >
+                                                                    Appointed
+                                                                </a>';
+                                                    } elseif ($cv_list->job_tutor_status == 'Rejected') {
+                                                        $selected_header = 'head_blue';
+                                                        $selected_text = '<a class="md-btn md-btn-success uk-float-right uk-width-1-1" >
+                                                                    Rejected
+                                                                </a>';
+                                                    } elseif ($cv_list->job_tutor_status == 'Assign') {
+                                                        $selected_header = 'head_blue';
+                                                        $selected_text = '<a class="md-btn md-btn-success uk-float-right uk-width-1-1" >
+                                                                    Confirmed
+                                                                </a>';
+                                                    }
+                                                    ?>
+                                                    <div class="uk-width-medium-1-2 uk-width-large-1-3 uk-margin-small-bottom <?php echo (($l == 0) || ($l == 3)) ? 'uk-margin-small-left' : ''; ?>" <?php echo (($l == 1) || ($l == 2) || ($l == 4)) ? 'style="margin-left: -5px;"' : ''; ?>>
+                                                        <div class="md-card">
+                                                            <div class="md-card-head <?php echo $selected_header; ?>" style="padding: 10px;">
+                                                                <div class="md-card-head-menu" data-uk-dropdown>
+                                                                    <i class="md-icon material-icons md-icon-light">&#xE5D4;</i>
+                                                                    <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
+                                                                        <ul class="uk-nav">
+                <?php ?>
+                                                                            <li><a href="javascript:void(0)" class="select_tutor_from_cv" data-job_id="<?php echo $job->id; ?>" data-tutor_id="<?php echo $cv_list->id; ?>">Select tutor</a></li>
+                                                                            <li><a target="_blank" href="<?php echo base_url('parents/tutor_profile_view/' . $cv_list->id . '/' . $job->id); ?>" >View tutor</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="uk-width-small-1-3" style="float: left;">
+                                                                    <?php
+
+                                                                    if ($cv_list->profile_pic != '') {
+                                                                        if (!empty($cv_list->profile_pic)) {
+                                                                            ?>
+                                                                            <img style="width: 60px; height: 60px;" class="md-card-head-avatar" src="<?php echo base_url("assets/upload/" . $cv_list->profile_pic); ?>" />
+                                                                        <?php } else { ?>
+                                                                            <img style="width: 60px; height: 60px;" class="md-card-head-avatar" src="<?php echo base_url(); ?>assets/panel/img/avatars/user.png" />
+                                                                        <?php
+                                                                        }
+                                                                    } else {
+                                                                        ?>
+                                                                        <img style="width: 60px; height: 60px;" class="md-card-head-avatar" src="<?php echo base_url(); ?>assets/panel/img/avatars/user.png" />
+                                                                    <?php } ?>
+                                                                </div>
+                                                                <div class="uk-width-small-2-3" style="padding: 21px 0 0 10px;float: left;">
+                                                                    <?php echo "<p style='font-size:14px;color:#fff;margin-bottom:0;'>Tutor ID : " . $cv_list->id . '</p>';?>
+                                                                    <?php echo "<h3 class='md-card-head-text'>".$cv_list->full_name; ?>
+                                                                     <?php
+
+                                                                        if ($cv_list->is_verified == 1) {
+                                                                            ?>&nbsp;<i style="color: #fff !important" class="uk-icon-check-circle uk-text-primary" data-parsley-trigger="keyup" data-uk-tooltip="{pos:'right'}" title="Verified"></i>&nbsp;<?php }
+                                                                        ?>
+                                                                    </h3>
+                                                                    <?php if ($cv_list->cv_status == 'completed') { ?>
+
+                                                                    <?php } else { ?>
+                                                                        <a class="md-btn md-btn-success" style="padding: 7px 20px; font-size: 14px;" href="<?php echo base_url('parents/tutor_profile_view/' . $cv_list->id . '/' . $job->id); ?>" target="_blank">
+                                                                            View Profile
+                                                                        </a>
+                                                                    <?php } ?>
+                                                                </div>
+                                                            </div>
+                                                            <div class="md-card-content">
+                                                                <ul class="md-list border_zero">
+                                                                    <li>
+                                                                        <div class="md-list-content">
+                                                                            <span class="md-list-heading">Current Institute</span>
+                                                                            <span class="uk-text-small uk-text-muted"><?php echo $cv_list->institute; ?></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="md-list-content">
+                                                                            <span class="md-list-heading">Experience</span>
+                                                                            <span class="uk-text-small uk-text-muted"><?php echo $cv_list->experiences; ?></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="md-list-content">
+                                                                            <span class="md-list-heading">Requirement Matched</span>
+                                                                            <span class="uk-text-small uk-text-muted"><?php echo ($cv_list->step_no * 2) . '0%'; ?></span>
+                                                                        </div>
+                                                                    </li>
+
+
+                                                                        <?php if ($selected_text != '') { ?>
+                                                                        <li>
+                                                                            <div class="md-list-content" style="position: absolute; width: 100%; left: 0; bottom: 0;">
+                                                                        <?php echo $selected_text; ?>
+                                                                            </div>
+                                                                        </li>
+                                                                        <?php } ?>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <?php
+                                                    $l++;
+                                                }
+                                            } else {
+                                                ?>
+                                                <img src="<?php echo base_url('assets/img/best_cv_are_coming.jpg') ?>" style="width: 100%;" />
+                                    <?php } ?>
+                                        </div>
+                                    </li>
+                                    <?php
+                                    $i++;
+                                    } ?>
+                        </ul>
+
                     </div>
                 </div>
-
-
             </div>
 
-            <div class="container">
 
-            </div>
+
         </div>
     </div>
 </div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <div class="uk-modal" id="mailbox_new_message" id="page_content">
-        
-    <div class="uk-modal-dialog" id="page_content_inner">
+
+<!-- <div class="md-fab-wrapper">
+<a class="md-fab md-fab-accent" href="#mailbox_new_message" data-uk-modal="{center:true}">
+    <i class="material-icons">&#xE145;</i>
+</a>
+</div> -->
+
+<div class="uk-modal" id="mailbox_new_message">
+    <div class="uk-modal-dialog">
         <button class="uk-modal-close uk-close" type="button"></button>
         <form method="post" id="job_add_form" class="uk-form-stacked new_job_add">
             <input type="hidden" value="1" name="step" id="step" />
@@ -324,32 +464,9 @@
         </form>
     </div>
 </div>
-
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: false
-                    },
-                    1000: {
-                        items: 3,
-                        nav: true,
-                        loop: false,
-                        margin: 20
-                    }
-                }
-            })
-        })
-    </script>
-</body>
-
-
+<?php $this->session->unset_userdata('gretings'); ?>
+<style>
+    .uk-datepicker{
+        z-index: 2094;
+    }
+</style>
