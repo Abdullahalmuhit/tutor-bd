@@ -1270,7 +1270,7 @@ div[class*="single-item-style"] .content p {
     height: 64px;
     background: #3bb3bd;
     border-radius: 50%;
-    background: #00923f;
+    background: #62B235;
 }
 
 .icon-wrap i {
@@ -1355,7 +1355,7 @@ div[class*="single-item-style"] .content p {
 /***Counter CSS***/
 
 .counter-area-strat {
-    padding: 50px 0px;
+    padding: 25px 0px;
     background: #62B235;
 }
 
@@ -1438,8 +1438,8 @@ subject-bg-wrap {
 }
 
 .subject-bg-tag.home-subject-1 {
-    background-color: #0054a2;
-    background-color: #00923f;
+   
+    background-color: #62B235;
 }
 
 .subject-bg-tag {
@@ -1514,8 +1514,8 @@ subject-bg-wrap {
 }
 
 .home-subject-1 .subject-bg-hover>span {
-    background-color: #0054a2;
-    background-color: #00923f;
+    
+    background-color: #62B235;
 }
 
 .subject-bg-hover>span {
