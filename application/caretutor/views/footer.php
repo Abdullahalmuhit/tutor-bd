@@ -78,7 +78,7 @@
                                 <br>
                                 <a href="<?php echo base_url('landing/hire_a_tutor'); ?>"> <i class="fas fa-angle-right"></i> Hire A Tutor</a>
                                 <br>
-                                <a href="https://caretutors.com/blog"> <i class="fas fa-angle-right"></i> Our Blog</a>
+                                <a href="#"> <i class="fas fa-angle-right"></i> Our Blog</a>
                                 <br>
                                 <a href="<?php echo base_url('landing/contact'); ?>"> <i class="fas fa-angle-right"></i> Contact</a>
                                 <br>

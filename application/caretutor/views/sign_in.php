@@ -28,10 +28,10 @@
                                     <div class="error_txt"></div>
                                 </div>
                                 <ul class="types_block">
-                                    <li class="first-select">
+                                    <li class="first-select input-radio-hide">
                                         <input name="radiog_dark" id="membertype_student" class="common_radio" type="radio" value="guardian" checked=""> <label class="label_text" for="membertype_student">Student</label>
                                     </li>
-                                    <li class="">
+                                    <li class="input-radio-hide">
                                         <input name="radiog_dark" id="membertype_tutor" class="common_radio" type="radio" value="tutor"><label class="label_text" for="membertype_tutor">Tutor</label>
                                     </li>
 

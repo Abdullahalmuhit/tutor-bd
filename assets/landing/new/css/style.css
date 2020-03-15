@@ -4224,7 +4224,7 @@ input[type="file"] {
     border: #62B235;
     text-transform: uppercase;
     /* padding: 8px 15px; */
-    width: 165px;
+       width: 170px;
     height: 40px;
     margin-left: 10px;
     font-weight: 700;
@@ -4289,7 +4289,7 @@ input[type="file"] {
 
 .call-info {
     background: #01B406;
-    width: 344px;
+    width: 350px;
     margin: auto;
     text-align: center;
     display: block;
@@ -4298,7 +4298,9 @@ input[type="file"] {
     border-radius: 5px;
     margin-top: 2px;
 }
-
+.input-radio-hide input{
+    display: none!important;
+}
 .call-info p {
     font-weight: 700;
     padding: 3px 0px;

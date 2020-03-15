@@ -140,53 +140,52 @@ opacity: 0.4;
 													<h3 class="full_width_in_card heading_c">
 														Please select categories that match your qualifications.
 													</h3>
-													<div class="uk-grid" >
-														<div class="uk-width-1-1">
-															<label class="uk-text-hilight" for="tutor_profile_category">Category <span style="font-size: 12px; opacity: 0.6;">(you can not add more than five categories, so select categories based on your skills)</span></label>
-															<select id="tutor_profile_category" name="tutor_profile_category" multiple>
-                                                                
-																<option value="">Category</option>
-																		<?php if(!empty($category)):
-																// unset($category[0]);
-																foreach ($category as $cat):
-																$selected = '';
-																if((!empty($selected_cats)) && in_array($cat->id, $selected_cats)):
-																	$selected = 'selected="selected"';
-																endif; ?>
-																<option <?php echo $selected; ?> value="<?php echo $cat->id; ?>"><?php echo $cat->category; ?></option>
-															<?php
-																								endforeach;
-															endif; ?>
-															</select>
-														</div>
-													</div>
+													   <div class="uk-grid" >
+				                                                <div class="uk-width-1-1">
+				                                                	<label class="uk-text-hilight" for="tutor_profile_category">Category <span style="font-size: 12px; opacity: 0.6;">(you can not add more than five categories, so select categories based on your skills)</span></label>
+				                                                    <select id="tutor_profile_category" name="tutor_profile_category" multiple>
+				                                                        <option value="">Category</option>
+          									                                    <?php if(!empty($category)):
+                                                                      // unset($category[0]);
+                                                                      foreach ($category as $cat):
+                                                                        $selected = '';
+                                                                        if((!empty($selected_cats)) && in_array($cat->id, $selected_cats)):
+                                                                          $selected = 'selected="selected"';
+                                                                        endif; ?>
+                                                                        <option <?php echo $selected; ?> value="<?php echo $cat->id; ?>"><?php echo $cat->category; ?></option>
+                                                                    <?php
+                                																		endforeach;
+                                                                  endif; ?>
+				                                                    </select>
+				                                                </div>
+				                                            </div>
 
-													<div class="uk-grid" data-uk-grid-margin>
-														<div class="uk-width-1-1" id="class_show">
-															<label class="uk-text-hilight" for="classcourse">Class / course <span style="font-size: 12px; opacity: 0.6;">(e.g. Class 1, Standard 1)</span></label>
-															<select id="classcourse" name="classcourse" multiple>
-																<?php if(!empty($cateories_class)){ ?>
-																	<?php foreach ($category as $cat){ ?>
-																		<optgroup label='<?php echo $cat->category; ?>'>
-																			<?php
-																				foreach ($cateories_class as $class)
-																				{
-																					if($class->parent_id == $cat->id){
-																					$selected = '';
-																						if(!empty($selected_cls) && in_array($class->id, $selected_cls)){
-																							$selected = 'selected="selected"';
+    <div class="uk-grid" data-uk-grid-margin>
+				                                                <div class="uk-width-1-1" id="class_show">
+				                                                	<label class="uk-text-hilight" for="classcourse">Class / course <span style="font-size: 12px; opacity: 0.6;">(e.g. Class 1, Standard 1)</span></label>
+				                                                    <select id="classcourse" name="classcourse" multiple>
+				                                                        <?php if(!empty($cateories_class)){ ?>
+				                                                        	<?php foreach ($category as $cat){ ?>
+									                                    		<optgroup label='<?php echo $cat->category; ?>'>
+									                                    			<?php
+									                                    				foreach ($cateories_class as $class)
+																						{
+																							if($class->parent_id == $cat->id){
+																							$selected = '';
+																								if(!empty($selected_cls) && in_array($class->id, $selected_cls)){
+																									$selected = 'selected="selected"';
+																								}
+																							?>
+																								<option <?php echo $selected; ?> value='<?php echo $class->id; ?>'><?php echo $class->category; ?></option>
+																							<?php }
 																						}
-																					?>
-																						<option <?php echo $selected; ?> value='<?php echo $class->id; ?>'><?php echo $class->category; ?></option>
-																					<?php }
-																				}
-																			?>
-																		</optgroup>
-																	<?php } ?>
-																<?php } ?>
-															</select>
-														</div>
-													</div>
+									                                    			?>
+									                                    		</optgroup>
+									                                    	<?php } ?>
+				                                                        <?php } ?>
+				                                                    </select>
+				                                                </div>
+				                                            </div>
 
 													<div id="subject_show">
 														<?php if(!empty($tution_info)){ ?>
