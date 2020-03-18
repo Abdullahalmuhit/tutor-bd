@@ -1261,10 +1261,7 @@
                             <div class="download-app">
                                 <h4>Download Tution Terminal Android App</h4> <a href="#" target="_blank"><img width="180" src="<?php echo base_url('assets/img/playStore.png') ?>"></a>
                                 <div>
-                                    <form class="mt-5 d-none d-sm-block">
-                                        <h5>GET LINK IN SMS TO DOWNLOAD THE APP</h5> <strong class="text-success"></strong>
-                                        <div class="get-link"><span class="country">+88</span> <input id="number" name="number" type="text" placeholder="Enter Mobile Number" required="required" class="number"> <button type="button" class="btn-get">Get Link</button></div>
-                                    </form>
+                                   <p style="margin-top:10px">With Tution Terminal official app, Make your profile in minutes. Apply to your preferred tutoring jobs that match your skills</p>
                                 </div>
                             </div>
                         </div>
