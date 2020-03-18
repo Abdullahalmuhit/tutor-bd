@@ -52,12 +52,7 @@ class Quizes extends CI_Controller {
     }
 
     function load_quizes($chapter_quiz_id = 0) {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
         $this->load->model('exam_model', 'exam');
 
         $this->load->model('category_model');

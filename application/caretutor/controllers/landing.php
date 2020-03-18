@@ -23,13 +23,7 @@ class Landing extends CI_Controller {
     }
 
     public function index() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
-
+       
         /* if ($this->session->userdata('user_type'))
           {
           if ($this->session->userdata('user_type') == 'guardian')
@@ -84,12 +78,7 @@ class Landing extends CI_Controller {
     }
 
     public function job_board($page = 0) {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+  
         
         //$this->check_is_logged_in();
         $this->load->model('city_location_model');
@@ -529,12 +518,7 @@ class Landing extends CI_Controller {
     }
 
     public function become_a_tutor() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+   
         
         //$this->check_is_logged_in();
         $data = array(
@@ -546,12 +530,7 @@ class Landing extends CI_Controller {
 
     public function signup() {
 
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+  
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -571,12 +550,7 @@ class Landing extends CI_Controller {
 
     public function hire_a_tutor() {
 
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');

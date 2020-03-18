@@ -207,12 +207,8 @@ class Tutor extends CI_Controller {
     }
 
     public function dashboard($page = 0) {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+ 
+      
 
         $this->load->model('user_model');
         $this->load->model('tution_info_model');
@@ -416,12 +412,7 @@ class Tutor extends CI_Controller {
     }
 
     public function profile_edit() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -1758,13 +1749,7 @@ class Tutor extends CI_Controller {
     }
 
     public function my_stats() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
-
+      
         $this->load->model('city_location_model');
         $this->load->model('category_model');
         $this->load->model('institute_model');
@@ -2017,12 +2002,7 @@ class Tutor extends CI_Controller {
     }
 
     public function profile_plain_view() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+     
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -2422,12 +2402,7 @@ class Tutor extends CI_Controller {
     }
 
     public function email_list() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+   
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -2502,12 +2477,7 @@ class Tutor extends CI_Controller {
     }
 
     public function settings() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
         $this->load->model('city_location_model');
         $this->load->model('category_model');
         $this->load->model('institute_model');
@@ -2587,12 +2557,7 @@ class Tutor extends CI_Controller {
     }
 
     public function contract_confirmation() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+
         
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -2821,12 +2786,7 @@ class Tutor extends CI_Controller {
     }
 
     public function become_good_tutor() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -2909,12 +2869,7 @@ class Tutor extends CI_Controller {
     }
 
     public function safety_guideline() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
         $this->load->model('city_location_model');
         $this->load->model('category_model');
         $this->load->model('institute_model');
@@ -2997,12 +2952,7 @@ class Tutor extends CI_Controller {
     }
 
     public function tutors_tips() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -3085,12 +3035,7 @@ class Tutor extends CI_Controller {
     }
 
     public function payment() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -3173,12 +3118,7 @@ class Tutor extends CI_Controller {
     }
 
     public function invoice_list() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');
@@ -3262,12 +3202,7 @@ class Tutor extends CI_Controller {
     }
 
     public function verify_invoice_list() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
 
         $this->load->model('city_location_model');
         $this->load->model('category_model');

@@ -22,12 +22,7 @@ class Signin extends CI_Controller {
     }
 
     public function index() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+      
         
         $this->check_is_logged_in();
         /* $data = array(

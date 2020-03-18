@@ -178,7 +178,7 @@
                                                                         }
                                                                     } else {
                                                                         ?>
-                                                                        <img style="width: 60px; height: 60px;" class="md-card-head-avatar" src="<?php echo base_url(); ?>assets/panel/img/avatars/user.png" />
+                                                                        <img style="width: 60px; height: 60px;" class="md-card-head-avatar" src="" />
                                                                     <?php } ?>
                                                                 </div>
                                                                 <div class="uk-width-small-2-3" style="padding: 21px 0 0 10px;float: left;">
@@ -237,7 +237,7 @@
                                                 }
                                             } else {
                                                 ?>
-                                                <img src="<?php echo base_url('assets/img/best_cv_are_coming.jpg') ?>" style="width: 100%;" />
+                                                <img src="" style="width: 100%;" />
                                     <?php } ?>
                                         </div>
                                     </li>
@@ -440,7 +440,7 @@
 
                 <div class="uk-form-row">
                     <label for="selday" class="uk-form-label">How did you hear about us</label>
-                    <select class="form-control selhear" id="selhear" name="selhear" data-md-selectize>
+                    <select id="selhear" name="selhear" data-md-selectize>
                         <!-- <option value="0">How did you hear about us?</option> -->
                         <option value="1">From Friends & Family</option>
                         <option value="2">From Facebook</option>

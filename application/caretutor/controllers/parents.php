@@ -324,12 +324,7 @@ class Parents extends CI_Controller {
 
     public function dashboard() {
         
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+    
         $this->load->model('city_location_model');
         $this->load->model('category_model');
         $this->load->model('sdg_model');
@@ -1009,12 +1004,7 @@ class Parents extends CI_Controller {
     }
 
     public function settings() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
         $this->load->model('request_verify_model', 'verify');
         $user_info = $this->user_model->get_user($this->session->userdata('id'));
         $user_verifys = $this->verify->get_verify_data_by_user($this->session->userdata('id'));
@@ -1100,12 +1090,7 @@ class Parents extends CI_Controller {
     }
 
     public function profile() {
-        echo "<script language=\"javascript\">
-            var screenWidth = window.screen.width;
-            if(screenWidth < 800){
-                window.location.href = 'https://m.caretutors.com';
-            }
-        </script>";
+       
         $this->load->model('request_verify_model', 'verify');
         $user_info = $this->user_model->get_user($this->session->userdata('id'));
         $user_verifys = $this->verify->get_verify_data_by_user($this->session->userdata('id'));

@@ -87,19 +87,30 @@ opacity: 0.4;
 			<div class="uk-width-large-7-10">
 				<div class="md-card">
 					<div class="user_heading">
-						<div class="user_heading_avatar fileinput fileinput-new" data-provides="fileinput">
-							
-							<div class="fileinput-preview fileinput-exists thumbnail"></div>
-							<!-- <div class="user_avatar_controls">
-								<span class="btn-file">
-									<span class="fileinput-new"><i class="material-icons">&#xE2C6;</i></span>
-									<span class="fileinput-exists"><i class="material-icons">&#xE86A;</i></span>
-									<input type="file" name="user_edit_avatar_control" id="user_edit_avatar_control">
-								</span>
-								<a href="#" class="btn-file fileinput-exists" data-dismiss="fileinput"><i class="material-icons">&#xE5CD;</i></a>
-							</div> -->
-							
-						</div>
+					<div class="user_heading_avatar fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="fileinput-new thumbnail">
+                                    	<?php
+                                    	if(!empty($profile_pic_info) && $profile_pic_info['profile_pic'] != ''){ ?>
+                                    		<img src="<?php echo base_url("assets/upload/".$profile_pic_info['profile_pic']); ?>" />
+                                    	<?php }else{ ?>
+                                    		<img src="<?php echo base_url();?>assets/panel/img/avatars/user.png" />
+                                    	<?php }?>
+                                    </div>
+                                    <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                    <!-- <div class="user_avatar_controls">
+                                        <span class="btn-file">
+                                            <span class="fileinput-new"><i class="material-icons">&#xE2C6;</i></span>
+                                            <span class="fileinput-exists"><i class="material-icons">&#xE86A;</i></span>
+                                            <input type="file" name="user_edit_avatar_control" id="user_edit_avatar_control">
+                                        </span>
+                                        <a href="#" class="btn-file fileinput-exists" data-dismiss="fileinput"><i class="material-icons">&#xE5CD;</i></a>
+                                    </div> -->
+                                    <div class="user_avatar_controls">
+                                        <span class="btn-file">
+                                            <a class="fileinput-new" href="#upload_new_profile_pic" data-uk-modal="{center:true}"><i class="material-icons">&#xE2C6;</i></a>
+                                        </span>
+                                    </div>
+                                </div>
 						<div class="user_heading_content">
 							<h2 class="heading_b"><span class="uk-text-truncate" id="user_edit_uname"><?php echo (!empty($user_data))?$user_data->full_name:'Your name'; ?></span>
 								<span class="sub-heading"><?php echo round($review->review, 1) ?> <i style="color: #fff" class="uk-icon-star"></i></span>
@@ -1216,7 +1227,9 @@ Make sure file size will not more than 5 MB. You can’t upload more than 4 cred
 	</div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- 
+<script src="<?php echo base_url(); ?>assets/panel/js/tutor_profile_add_edit.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 <!--ref for help video-->
 
 
